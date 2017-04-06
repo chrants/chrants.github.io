@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- Angular Material style sheet -->
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
   </head>
   <body>
     <div class="jumbotron">
@@ -110,65 +110,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-sanitize.min.js"></script>
 
     <!-- Angular Material Library -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
 
     <!-- Your application bootstrap  -->
-    <script type="text/javascript">    
-      /**
-       * You must include the dependency on 'ngMaterial' 
-       */
-      angular
-        .module('ResumeApp', ['ngMaterial', 'ngSanitize'])
-        .controller('ExperienceCtrl', function($scope) {
-          $scope.jobs = [
-            {
-              company: "Cool Workplace",
-              position: "My Cool Position",
-              description: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
-              responsibilities: [
-                "I did cool stuff here. Hire me.",
-                "<mark>HTML</mark> <mark>CSS</mark> <mark>JavaScript</mark>"
-              ]
-            },
-            {
-              company: "Cool Workplace",
-              position: "My Cool Position",
-              description: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
-              responsibilities: [
-                "I did cool stuff here. Hire me.",
-                "<mark>HTML</mark> <mark>CSS</mark> <mark>JavaScript</mark>"
-              ]
-            },
-            {
-              company: "Cool Workplace",
-              position: "My Cool Position",
-              description: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
-              responsibilities: [
-                "I did cool stuff here. Hire me.",
-                "<mark>HTML</mark> <mark>CSS</mark> <mark>JavaScript</mark>"
-              ]
-            },
-            {
-              company: "Cool Workplace",
-              position: "My Cool Position",
-              description: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
-              responsibilities: [
-                "I did cool stuff here. Hire me.",
-                "<mark>HTML</mark> <mark>CSS</mark> <mark>JavaScript</mark>"
-              ]
-            }
-          ];
-        })
-        .directive('resumeSection', function() {
-          return {
-            restrict: "E",
-            templateUrl: "components/resume-section.html",
-            scope: {
-              title: "@"
-            },
-            transclude: true
-          };
-        });
-    </script>
+    <script src="app.js" type="text/javascript"></script>
   </body>
 </html>
