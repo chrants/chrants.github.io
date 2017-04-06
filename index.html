@@ -47,52 +47,43 @@
         </md-list>
       </resume-section>
       
-      <md-card class="row">
-        <md-toolbar class="col-12">
-          <div class="md-toolbar-tools">
-            <h3>
-              <span>Professional Experience</span>
-            </h3>
-          </div>
-        </md-toolbar>
-        
-        <md-list class="row">
-          <div class="col-lg-6">
-            <md-list-item>
-              <md-list-item-text>
-                <h4>Cool Workplace <small class="text-muted">My Cool Position</small></h4>
-                <div>
-                  Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-                  <ul>
-                    <li>I did cool stuff here. Hire me.</li>
-                    <li><mark>HTML</mark> <mark>CSS</mark> <mark>JavaScript</mark></li>
-                  </ul>
-                </div>
-              </md-list-item-text>
-              <md-divider></md-divider>
-            </md-list-item>
-
-            <h4>Subheading</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-            <h4>Subheading</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          </div>
-
-          <div class="col-lg-6">
-            <h4>Subheading</h4>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-            <h4>Subheading</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-            <h4>Subheading</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          </div>
+      <resume-section title="Projects">
+        <md-list ng-controller="ProjectsCtrl">
+          <md-list-item ng-repeat="project in projects">
+            <md-list-item-text>
+              <h4>{{project.title}}</h4>
+              <div>
+                {{project.description}}
+                <ul>
+                  <li ng-repeat="tech in project.technologies">
+                    <mark>{{tech}}</mark>
+                  </li>
+                </ul>
+              </div>
+            </md-list-item-text>
+            <md-divider ng-if="!$last"></md-divider>
+          </md-list-item>
         </md-list>
-      </md-card>
-
-      <footer class="footer">
+      </resume-section>
+      
+      <resume-section title="Skills">
+        <div ng-controller="SkillsCtrl" class="row">
+        <md-card ng-repeat="skillset in skillsets" class="col-12 col-lg-4">
+          <md-card-title>
+            <h4>{{skillset.title}}</h4>
+          </md-card-title>
+          <md-card-content>
+            <ul>
+              <li ng-repeat="skill in skillset.skills">
+                <mark>{{skill}}</mark>
+              </li>
+            </ul>
+          </md-card-content>
+        </md-card>
+        </div>
+      </resume-section>
+      
+      <footer>
         <p>© Christian Tschoepe 2017</p>
       </footer>
     </div>

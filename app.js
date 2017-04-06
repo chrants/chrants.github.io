@@ -43,6 +43,31 @@ angular
       }
     ];
   })
+  .controller('ProjectsCtrl', function($scope) {
+    $scope.projects = [
+      {
+        title: "todolist.social",
+        description: "Website that does cool stuff",
+        technologies: ["HTML", "CSS", "JavaScript", "AngularJS", "NodeJS"]
+      }
+    ];
+  })
+  .controller('SkillsCtrl', function($scope) {
+    $scope.skillsets = [
+      {
+        title: "Programming Languages",
+        skills: ["JavaScript", "TypeScript", "Java", "Python", "Ruby"]
+      },
+      {
+        title: "Web Front-End",
+        skills: ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        title: "Web Back-End",
+        skills: ["NodeJS"]
+      }
+    ];
+  })
   .directive('resumeSection', function() {
     return {
       restrict: "E",
