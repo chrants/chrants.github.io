@@ -13,34 +13,32 @@ angular
         position: "UI Intern",
         description: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
         responsibilities: [
-          "I did cool stuff here. Hire me.",
+          "Implemented an internal Angular UI/UX best practices website to ensure internal code consistency among all of the products in the Solarwinds web portfolio.",
           "<mark>HTML</mark> <mark>CSS</mark> <mark>JavaScript</mark> <mark>NodeJS</mark> <mark>AngularJS</mark> <mark>express.js</mark>"
         ]
       },
       {
         company: "Pearson",
-        position: "My Cool Position",
-        description: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
+        position: "Web App Development Intern", // TODO: Change title to something else, if possible
         responsibilities: [
-          "I did cool stuff here. Hire me.",
+          "Implemented a web interface MongoDB replacement for an outdated OracleSQL internal tool, significantly reducing software-as-a-service fees while adding critical permission management features for over 1000 employees.",
           "<mark>HTML</mark> <mark>CSS</mark> <mark>JavaScript</mark> <mark>NodeJS</mark> <mark>MongoDB</mark> <mark>OracleSQL</mark> <mark>AngularJS</mark> <mark>express.js</mark>"
         ]
       },
       {
         company: "Educational Design Studios",
-        position: "My Cool Position",
-        description: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
+        position: "Web App Developer",
+        description: "Led a small team to design and implement a Ruby on Rails web application to provide teachers with an easy way to obtain and share educational resources on various subjects.",
         responsibilities: [
-          "I did cool stuff here. Hire me.",
+          "Developed a way for teachers to rate and preview educational materials, ensuring teachers obtain the best possible educational resources for students.",
           "<mark>HTML</mark> <mark>CSS</mark> <mark>JavaScript</mark> <mark>Ruby</mark> <mark>Ruby on Rails</mark>"
         ]
       },
       {
         company: "Rackspace Hosting",
-        position: "My Cool Position",
-        description: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
+        position: "Web App Development Intern",
         responsibilities: [
-          "I did cool stuff here. Hire me.",
+          "Collaborated in a team environment, creating a Ruby web-based application process to streamline the creation and requesting of internships among employees and admins.",
           "<mark>HTML</mark> <mark>CSS</mark> <mark>JavaScript</mark> <mark>Ruby</mark>"
         ]
       }
