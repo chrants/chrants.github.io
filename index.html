@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
   </head>
   <body ng-app="ResumeApp" ng-cloak>
-    <div class="jumbotron">
+    
+    <div class="jumbotron mb-0 pb-4">
       <div class="container">
         <h1 class="display-3">Christian A. Tschoepe</h1>
         <div class="row">
@@ -24,77 +25,98 @@
             <a href="https://www.github.com/chrants">github.com/chrants</a>
           </address>
         </div>
-        <div class="row" ng-controller="HeadSkillsCtrl">
-          <ul class="list-inline">
-            <li ng-repeat="skill in skills" class="list-inline-item"><mark>{{skill}}</mark></li>
-          </ul>
-        </div>
       </div>
     </div>
     
-    <div class="container">
-      <resume-section title="Professional Experience">
-        <md-list ng-controller="ExperienceCtrl">
-          <md-list-item ng-repeat="job in jobs">
-            <md-list-item-text>
-              <h4>{{job.company}} <small class="text-muted">{{job.position}}</small></h4>
-              <div>
-                <p ng-if="job.description" class="lead mb-0">{{job.description}}</p>
-                <ul class="list-unstyled">
-                  <li ng-repeat="responsibility in job.responsibilities">
-                    <span ng-bind-html="responsibility"></span>
-                  </li>
-                </ul>
-              </div>
-            </md-list-item-text>
-            <md-divider ng-if="!$last"></md-divider>
-          </md-list-item>
-        </md-list>
-      </resume-section>
-      
-      <resume-section title="Projects">
-        <md-list ng-controller="ProjectsCtrl">
-          <md-list-item ng-repeat="project in projects">
-            <md-list-item-text>
-              <h4>{{project.title}}</h4>
-              <div>
-                {{project.description}}
-                <ul class="list-inline">
-                  <li class="list-inline-item" ng-repeat="tech in project.technologies">
-                    <mark>{{tech}}</mark>
-                  </li>
-                </ul>
-              </div>
-            </md-list-item-text>
-            <md-divider ng-if="!$last"></md-divider>
-          </md-list-item>
-        </md-list>
-      </resume-section>
-      
-      <resume-section title="Skills">
-        <div ng-controller="SkillsCtrl" class="row">
-          <div ng-repeat="skillset in skillsets" class="col-12 col-lg-4">
-            <md-card>
-              <md-card-title>
+    <div class="d-flex flex-column-reverse flex-lg-column">
+    
+      <!-- SKILLS SECTION -->
+      <div class="bg-faded pt-5 pb-5 mb-2 p-2 hidden-md-down hidden-print">
+        <div class="container">
+          <div ng-controller="SkillsCtrl" class="row">
+            <div ng-repeat="skillset in skillsets" class="col-12 col-lg-4">
+              <md-card>
+                <md-card-title>
+                  <h4>{{skillset.title}}</h4>
+                </md-card-title>
+                <md-divider></md-divider>
+                <md-card-content>
+                  <ul class="list-inline">
+                    <li class="list-inline-item" ng-repeat="skill in skillset.skills">
+                      <mark>{{skill}}</mark>
+                    </li>
+                  </ul>
+                </md-card-content>
+              </md-card>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -->
+
+      <div class="container p-2">
+        
+        <resume-section title="Professional Experience">
+          <md-list ng-controller="ExperienceCtrl">
+            <md-list-item ng-repeat="job in jobs">
+              <md-list-item-text>
+                <h4>{{job.company}} <small class="text-muted">{{job.position}}</small></h4>
+                <div>
+                  <p ng-if="job.description" class="lead mb-0">{{job.description}}</p>
+                  <ul class="list-unstyled">
+                    <li ng-repeat="responsibility in job.responsibilities">
+                      <span ng-bind-html="responsibility"></span>
+                    </li>
+                  </ul>
+                </div>
+              </md-list-item-text>
+              <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+          </md-list>
+        </resume-section>
+
+        <resume-section title="Projects">
+          <md-list ng-controller="ProjectsCtrl">
+            <md-list-item ng-repeat="project in projects">
+              <md-list-item-text>
+                <h4>{{project.title}}</h4>
+                <div>
+                  {{project.description}}
+                  <ul class="list-inline">
+                    <li class="list-inline-item" ng-repeat="tech in project.technologies">
+                      <mark>{{tech}}</mark>
+                    </li>
+                  </ul>
+                </div>
+              </md-list-item-text>
+              <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+          </md-list>
+        </resume-section>
+        
+        <resume-section title="Skills" class="hidden-lg-up">
+          <md-list ng-controller="SkillsCtrl">
+            <md-list-item ng-repeat="skillset in skillsets">
+              <md-list-item-text>
                 <h4>{{skillset.title}}</h4>
-              </md-card-title>
-              <md-divider></md-divider>
-              <md-card-content>
                 <ul class="list-inline">
                   <li class="list-inline-item" ng-repeat="skill in skillset.skills">
                     <mark>{{skill}}</mark>
                   </li>
                 </ul>
-              </md-card-content>
-            </md-card>
-          </div>
-        </div>
-      </resume-section>
+              </md-list-item-text>
+              <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+          </md-list>
+        </resume-section>
+        
+      </div>
       
-      <footer>
-        <p>© Christian Tschoepe 2017</p>
-      </footer>
     </div>
+      
+    <footer class="container">
+      <p>© Christian Tschoepe 2017</p>
+    </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
