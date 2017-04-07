@@ -73,18 +73,21 @@
       
       <resume-section title="Skills">
         <div ng-controller="SkillsCtrl" class="row">
-        <md-card ng-repeat="skillset in skillsets" class="col-12 col-lg-4">
-          <md-card-title>
-            <h4>{{skillset.title}}</h4>
-          </md-card-title>
-          <md-card-content>
-            <ul>
-              <li ng-repeat="skill in skillset.skills">
-                <mark>{{skill}}</mark>
-              </li>
-            </ul>
-          </md-card-content>
-        </md-card>
+          <div ng-repeat="skillset in skillsets" class="col-12 col-lg-4">
+            <md-card>
+              <md-card-title>
+                <h4>{{skillset.title}}</h4>
+              </md-card-title>
+              <md-divider></md-divider>
+              <md-card-content>
+                <ul class="list-inline">
+                  <li class="list-inline-item" ng-repeat="skill in skillset.skills">
+                    <mark>{{skill}}</mark>
+                  </li>
+                </ul>
+              </md-card-content>
+            </md-card>
+          </div>
         </div>
       </resume-section>
       
