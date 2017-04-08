@@ -17,7 +17,7 @@
         <h1 class="display-3">Christian A. Tschoepe</h1>
         <div class="row">
           <p class="lead col">
-            This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself.
+            <b>This website is clearly a work in progress, but it's getting there!</b> This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself.
           </p>
           <address class="lead col col-12 col-lg-auto">
             <a href="mailto:tschoepe.christian@gmail.com">tschoepe.christian@gmail.com</a> <br>
@@ -66,6 +66,13 @@
                   <ul class="list-unstyled">
                     <li ng-repeat="responsibility in job.responsibilities">
                       <span ng-bind-html="responsibility"></span>
+                    </li>
+                    <li>
+                      <ul class="list-inline">
+                        <li class="list-inline-item" ng-repeat="tech in job.technologies">
+                          <mark>{{tech}}</mark>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
