@@ -27,7 +27,7 @@ resume-section md-list md-list-item md-list-item-text > :last-child {
   margin-bottom: 0px;
 }
 
-resume-section md-card-title {
+resume-section md-card-title, #skills-top md-card-title {
   padding-top: 16px;
   padding-bottom: 4px;
 }
@@ -35,4 +35,8 @@ resume-section md-card-title {
 .container-fluid {
   max-width: 1186px;
   /* 1186px 1194px or 1216px!? */
+}
+
+footer {
+  font-weight: lighter;
 }

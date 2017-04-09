@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <title>Christian Tschoepe Resumé</title>
+   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- Angular Material style sheet -->
@@ -15,7 +17,7 @@
   </head>
   <body ng-app="ResumeApp" ng-cloak>
     
-    <div class="jumbotron mb-0 pb-4 rounded-0">
+    <header class="jumbotron mb-0 pb-4 rounded-0">
       <div class="container">
         <h1 class="display-3">Christian A. Tschoepe</h1>
         <div class="row">
@@ -25,44 +27,47 @@
           <address class="lead col col-12 col-lg-auto">
             <a href="mailto:tschoepe.christian@gmail.com">tschoepe.christian@gmail.com</a> <br>
             (210) 589-9720 <br>
-            <a href="https://www.github.com/chrants">github.com/chrants</a>
+            <a href="https://www.github.com/chrants">github.com/chrants</a><!-- <br>
+            <a href="https://www.linkedin.com/in/chrants/">linkedin.com/in/chrants</a> -->
           </address>
         </div>
       </div>
-    </div>
+    </header>
     
-    <div class="d-flex flex-column-reverse flex-lg-column">
-    
+    <div id="content">
+      
       <!-- SKILLS SECTION -->
-      <div class="bg-faded pt-5 pb-5 mb-2 p-2 hidden-md-down hidden-print">
-        <div class="container-fluid">
-          <div ng-controller="SkillsCtrl" layout="row" layout-align="space-between stretch">
+      <div class="hidden-md-down hidden-print mb-3">
+        <div id="skills-top" class="bg-faded pt-5 pb-5">
+          <div class="container-fluid">
+<!--            <h2 class="md-headline text-center"><span class="md-whiteframe-1dp p-2 bg-faded">Skills</span></h2>-->
+            <div ng-controller="SkillsCtrl" layout="row" layout-align="space-between stretch">
               <md-card flex ng-repeat="skillset in skillsets">
                 <md-card-title flex="none">
-                  <h4>{{skillset.short}}</h4>
+                  <h4 class="text-center mx-auto ">{{skillset.short}}</h4>
                 </md-card-title>
                 <md-divider></md-divider>
                 <md-card-content>
-                  <ul class="list-inline te">
+                  <ul class="list-inline mb-0">
                     <li class="list-inline-item" ng-repeat="skill in skillset.skills">
                       <mark>{{skill}}</mark>
                     </li>
                   </ul>
                 </md-card-content>
               </md-card>
-            
+            </div>
           </div>
         </div>
       </div>
       <!-- -->
 
-      <div class="container p-2">
+      <div class="container">
         
         <resume-section title="Professional Experience">
           <md-list ng-controller="ExperienceCtrl">
             <md-list-item ng-repeat="job in jobs">
               <md-list-item-text>
-                <h5>{{job.company}} <br/><small class="text-muted">{{job.position}}</small></h5>
+                <h5>{{job.company}} <br><small class="text-muted">{{job.position}}</small></h5>
                 <p ng-if="job.description" class="lead mb-0">{{job.description}}</p>
                 <ul class="list-unstyled resume-item-main">
                   <li ng-repeat="responsibility in job.responsibilities">
