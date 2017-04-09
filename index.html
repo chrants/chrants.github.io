@@ -19,7 +19,7 @@
       <div class="container">
         <h1 class="display-3">Christian A. Tschoepe</h1>
         <div class="row">
-          <p class="lead col">
+          <p class="lead col text-justify">
             <b>This website is clearly a work in progress, but it's getting there!</b> This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself.
           </p>
           <address class="lead col col-12 col-lg-auto">
@@ -35,12 +35,11 @@
     
       <!-- SKILLS SECTION -->
       <div class="bg-faded pt-5 pb-5 mb-2 p-2 hidden-md-down hidden-print">
-        <div class="container">
-          <div ng-controller="SkillsCtrl" class="row">
-            <div ng-repeat="skillset in skillsets" class="col-lg-3">
-              <md-card>
-                <md-card-title>
-                  <h4>{{skillset.title}}</h4>
+        <div class="container-fluid">
+          <div ng-controller="SkillsCtrl" layout="row" layout-align="space-between stretch">
+              <md-card flex ng-repeat="skillset in skillsets">
+                <md-card-title flex="none">
+                  <h4>{{skillset.short}}</h4>
                 </md-card-title>
                 <md-divider></md-divider>
                 <md-card-content>
@@ -51,7 +50,7 @@
                   </ul>
                 </md-card-content>
               </md-card>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -63,22 +62,18 @@
           <md-list ng-controller="ExperienceCtrl">
             <md-list-item ng-repeat="job in jobs">
               <md-list-item-text>
-                <h4>{{job.company}} <small class="text-muted">{{job.position}}</small></h4>
-                <div>
-                  <p ng-if="job.description" class="lead mb-0">{{job.description}}</p>
-                  <ul class="list-unstyled">
-                    <li ng-repeat="responsibility in job.responsibilities">
-                      <span ng-bind-html="responsibility"></span>
-                    </li>
-                    <li>
-                      <ul class="list-inline">
-                        <li class="list-inline-item" ng-repeat="tech in job.technologies">
-                          <mark>{{tech}}</mark>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
+                <h5>{{job.company}} <br/><small class="text-muted">{{job.position}}</small></h5>
+                <p ng-if="job.description" class="lead mb-0">{{job.description}}</p>
+                <ul class="list-unstyled resume-item-main">
+                  <li ng-repeat="responsibility in job.responsibilities">
+                    <span ng-bind-html="responsibility"></span>
+                  </li>
+                </ul>
+                <ul class="list-inline">
+                  <li class="list-inline-item" ng-repeat="tech in job.technologies">
+                    <mark>{{tech}}</mark>
+                  </li>
+                </ul>
               </md-list-item-text>
               <md-divider ng-if="!$last"></md-divider>
             </md-list-item>
@@ -89,15 +84,15 @@
           <md-list ng-controller="ProjectsCtrl">
             <md-list-item ng-repeat="project in projects">
               <md-list-item-text>
-                <h4>{{project.title}}</h4>
-                <div>
+                <h5>{{project.title}}</h5>
+                <p class="resume-item-main">
                   {{project.description}}
-                  <ul class="list-inline">
-                    <li class="list-inline-item" ng-repeat="tech in project.technologies">
-                      <mark>{{tech}}</mark>
-                    </li>
-                  </ul>
-                </div>
+                </p>
+                <ul class="list-inline">
+                  <li class="list-inline-item" ng-repeat="tech in project.technologies">
+                    <mark>{{tech}}</mark>
+                  </li>
+                </ul>
               </md-list-item-text>
               <md-divider ng-if="!$last"></md-divider>
             </md-list-item>
@@ -108,7 +103,7 @@
           <md-list ng-controller="SkillsCtrl">
             <md-list-item ng-repeat="skillset in skillsets">
               <md-list-item-text>
-                <h4>{{skillset.title}}</h4>
+                <h5>{{skillset.title}}</h5>
                 <ul class="list-inline">
                   <li class="list-inline-item" ng-repeat="skill in skillset.skills">
                     <mark>{{skill}}</mark>

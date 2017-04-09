@@ -11,7 +11,7 @@ angular
       {
         company: "SolarWinds",
         position: "UI Intern",
-        description: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
+//        description: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
         responsibilities: [
           "Implemented an internal Angular UI/UX best practices website to ensure internal code consistency among all of the products in the Solarwinds web portfolio."
         ],
@@ -43,8 +43,10 @@ angular
         company: "Rackspace Hosting",
         position: "Web App Development Intern",
         responsibilities: [
-          "Collaborated in a team environment, creating a Ruby web-based application process to streamline the creation and requesting of internships among employees and admins.",
-          "<mark>HTML</mark> <mark>CSS</mark> <mark>JavaScript</mark> <mark>Ruby</mark> <mark>Bootstrap</mark>"
+          "Collaborated in a team environment, creating a Ruby web-based application process to streamline the creation and requesting of internships among employees and admins."
+        ],
+        technologies: [
+          "HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"
         ]
       }
     ];
@@ -66,18 +68,22 @@ angular
   .controller('SkillsCtrl', function($scope) {
     $scope.skillsets = [
       {
+        short: "Languages",
         title: "Programming Languages",
         skills: ["JavaScript", "Java", "Python", "Ruby", "CoffeeScript", "TypeScript", "Dart", "C", "Perl", "Prolog"]
       },
       {
+        short: "Front-End",
         title: "Web Front-End",
         skills: ["HTML", "CSS", "JavaScript", "TypeScript", "CoffeeScript", "Dart", "AngularJS", "Angular 2", "jQuery", "Bootstrap", "Material Design", "Webpack"]
       },
       {
+        short: "Back-End",
         title: "Web Back-End",
         skills: ["Express.js", "Ruby on Rails", "Heroku (Deployment)", "Docker", "Build Automation", "Continuous Integration", "Concurrency", "Testing Suites"]
       },
       {
+        short: "Low-Level",
         title: "Low-Level",
         skills: ["C", "Kernels", "File Systems", "Process Scheduling", "System Calls", "Concurrency"]
       }

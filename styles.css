@@ -2,11 +2,37 @@ html, body {
   overflow: auto;
 }
 
+resume-section md-card-title {
+  padding-left: 24px !important;
+}
+
 resume-section md-list {
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
-resume-section md-list > md-list-item {
-  padding-top: 8px !important;
+resume-section md-list md-list-item {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  padding-left: 24px !important;
+  padding-right: 16px !important;
+}
+
+resume-section md-list md-list-item .resume-item-main {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+resume-section md-list md-list-item md-list-item-text > :last-child {
+  margin-bottom: 0px;
+}
+
+resume-section md-card-title {
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
+.container-fluid {
+  max-width: 1186px;
+  /* 1186px 1194px or 1216px!? */
 }
