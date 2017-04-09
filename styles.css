@@ -1,0 +1,8 @@
+resume-section md-list {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+resume-section md-list > md-list-item {
+  padding-top: 8px !important;
+}
