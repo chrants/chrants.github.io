@@ -15,7 +15,7 @@
   </head>
   <body ng-app="ResumeApp" ng-cloak>
     
-    <div class="jumbotron mb-0 pb-4">
+    <div class="jumbotron mb-0 pb-4 rounded-0">
       <div class="container">
         <h1 class="display-3">Christian A. Tschoepe</h1>
         <div class="row">
@@ -37,14 +37,14 @@
       <div class="bg-faded pt-5 pb-5 mb-2 p-2 hidden-md-down hidden-print">
         <div class="container">
           <div ng-controller="SkillsCtrl" class="row">
-            <div ng-repeat="skillset in skillsets" class="col-12 col-lg-4">
+            <div ng-repeat="skillset in skillsets" class="col-lg-3">
               <md-card>
                 <md-card-title>
                   <h4>{{skillset.title}}</h4>
                 </md-card-title>
                 <md-divider></md-divider>
                 <md-card-content>
-                  <ul class="list-inline">
+                  <ul class="list-inline te">
                     <li class="list-inline-item" ng-repeat="skill in skillset.skills">
                       <mark>{{skill}}</mark>
                     </li>
