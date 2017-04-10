@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
     
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" media="all">
+    <!-- For Printing -->
+    <link rel="stylesheet" href="print.css" media="print">
   </head>
   <body ng-app="ResumeApp" ng-cloak>
     
@@ -21,14 +23,14 @@
       <div class="container">
         <h1 class="display-3 hidden-sm-down">Christian A. Tschoepe</h1>
         <h1 class="display-4 hidden-md-up">Christian A. Tschoepe</h1>
-        <div class="row">
-          <div class="lead col text-justify">
-            <p><strong>Aspiring Software Developer.</strong> I have experience in full-stack Web Development, but would love to explore OS Development or Mobile Development more! Currently, I am pursuing a full-time software position.</p>
-            <p>After having gone through a lot recently, I am currently taking an extended break from school to have a fresh start and adventure out into the world!</p>
+        <div id="headline" class="row">
+          <div id="intro" class="lead col text-justify hidden-print">
+            <p><strong>Aspiring Software Developer.</strong> I have experience in full-stack Web Development, but would love to explore OS or Mobile Development! Currently, I am pursuing a full-time software position.</p>
+            <p class="hidden-print">After having gone through a lot recently, I am currently taking an extended break from school to have a fresh start and adventure out into the world!</p>
           </div>
           <address class="lead col col-12 col-lg-auto">
             <a href="mailto:tschoepe.christian@gmail.com">tschoepe.christian@gmail.com</a> <br>
-            (210) 589-9720 <br>
+            <span>(210) 589-9720</span> <br>
             <a href="https://www.github.com/chrants">github.com/chrants</a><!-- <br>
             <a href="https://www.linkedin.com/in/chrants/">linkedin.com/in/chrants</a> -->
           </address>
@@ -63,7 +65,7 @@
         
         <resume-section section-title="Professional Experience">
           <md-list ng-controller="ExperienceCtrl">
-            <md-list-item ng-repeat="job in jobs">
+            <md-list-item ng-repeat="job in jobs" ng-class="{ 'hidden-print': job.hiddenPrint }">
               <md-list-item-text>
                 <h5>{{job.company}} <br><small class="text-muted">{{job.position}}</small></h5>
                 <p ng-if="job.description" class="lead mb-0">{{job.description}}</p>
@@ -81,7 +83,7 @@
 
         <resume-section section-title="Selected Projects">
           <md-list ng-controller="ProjectsCtrl">
-            <md-list-item ng-repeat="project in projects">
+            <md-list-item ng-repeat="project in projects" ng-class="{ 'hidden-print': project.hiddenPrint }">
               <md-list-item-text>
                 <h5>{{project.title}}</h5>
                 <p class="resume-item-main" ng-bind-html="project.description"></p>
@@ -94,7 +96,7 @@
         
         <resume-section section-title="Skills" class="hidden-lg-up">
           <md-list ng-controller="SkillsCtrl">
-            <md-list-item ng-repeat="skillset in skillsets">
+            <md-list-item ng-repeat="skillset in skillsets" ng-class="{ 'hidden-print': skillset.hiddenPrint }">
               <md-list-item-text>
                 <h5>{{skillset.title}}</h5>
                 <resume-chips source="skillset.skills"></resume-chips>
@@ -109,7 +111,8 @@
     </div>
       
     <footer class="container">
-      <p>© Christian Tschoepe 2017</p>
+      <span class="float-left">Written in HTML5 at <a href="https://chrants.github.io/">chrants.github.io</a></span>
+      <span class="float-right">© Christian Tschoepe 2017</span>
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->

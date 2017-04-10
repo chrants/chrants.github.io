@@ -39,7 +39,9 @@ resume-section md-card-title, #skills-top md-card-title {
 }
 
 footer {
+  overflow: auto;
   font-weight: lighter;
+  margin-bottom: 10px;
 }
 
 mark {

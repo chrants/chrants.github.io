@@ -56,7 +56,8 @@ angular
       {
         title: "PintOS",
         description: "A stupid OS that I wrote many parts of!",
-        technologies: ["C", "Kernel Development", "File Systems", "Process Scheduling", "Concurrency"]
+        technologies: ["C", "Kernel Development", "File Systems", "Process Scheduling", "Concurrency"],
+        hiddenPrint: true
       }
     ];
   })
@@ -80,7 +81,8 @@ angular
       {
         short: "Low-Level",
         title: "Low-Level",
-        skills: ["Android SDK", "C", "Kernel Development", "File Systems", "System Calls", "Concurrency"]
+        skills: ["Android SDK", "C", "Kernel Development", "File Systems", "System Calls", "Concurrency"],
+        hiddenPrint: true
       }
     ];
   })
