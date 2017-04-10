@@ -19,11 +19,13 @@
     
     <header class="jumbotron mb-0 pb-4 rounded-0">
       <div class="container">
-        <h1 class="display-3">Christian A. Tschoepe</h1>
+        <h1 class="display-3 hidden-sm-down">Christian A. Tschoepe</h1>
+        <h1 class="display-4 hidden-md-up">Christian A. Tschoepe</h1>
         <div class="row">
-          <p class="lead col text-justify">
-            <b>This website is clearly a work in progress, but it's getting there!</b> This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself. This is my personal statement. Where I write about myself.
-          </p>
+          <div class="lead col text-justify">
+            <p><strong>Aspiring Software Developer.</strong> I have experience in full-stack Web Development, but would love to explore OS Development or Mobile Development more! Currently, I am pursuing a full-time software position.</p>
+            <p>After having gone through a lot recently, I am currently taking an extended break from school to have a fresh start and adventure out into the world!</p>
+          </div>
           <address class="lead col col-12 col-lg-auto">
             <a href="mailto:tschoepe.christian@gmail.com">tschoepe.christian@gmail.com</a> <br>
             (210) 589-9720 <br>
@@ -44,15 +46,11 @@
             <div ng-controller="SkillsCtrl" layout="row" layout-align="space-between stretch">
               <md-card flex ng-repeat="skillset in skillsets">
                 <md-card-title flex="none">
-                  <h4 class="text-center mx-auto ">{{skillset.short}}</h4>
+                  <h4 class="text-center mx-auto">{{skillset.short}}</h4>
                 </md-card-title>
                 <md-divider></md-divider>
                 <md-card-content>
-                  <ul class="list-inline mb-0">
-                    <li class="list-inline-item" ng-repeat="skill in skillset.skills">
-                      <mark>{{skill}}</mark>
-                    </li>
-                  </ul>
+                  <resume-chips source="skillset.skills"></resume-chips>
                 </md-card-content>
               </md-card>
             </div>
@@ -63,7 +61,7 @@
 
       <div class="container">
         
-        <resume-section title="Professional Experience">
+        <resume-section section-title="Professional Experience">
           <md-list ng-controller="ExperienceCtrl">
             <md-list-item ng-repeat="job in jobs">
               <md-list-item-text>
@@ -74,46 +72,32 @@
                     <span ng-bind-html="responsibility"></span>
                   </li>
                 </ul>
-                <ul class="list-inline">
-                  <li class="list-inline-item" ng-repeat="tech in job.technologies">
-                    <mark>{{tech}}</mark>
-                  </li>
-                </ul>
+                <resume-chips source="job.technologies"></resume-chips>
               </md-list-item-text>
               <md-divider ng-if="!$last"></md-divider>
             </md-list-item>
           </md-list>
         </resume-section>
 
-        <resume-section title="Projects">
+        <resume-section section-title="Selected Projects">
           <md-list ng-controller="ProjectsCtrl">
             <md-list-item ng-repeat="project in projects">
               <md-list-item-text>
                 <h5>{{project.title}}</h5>
-                <p class="resume-item-main">
-                  {{project.description}}
-                </p>
-                <ul class="list-inline">
-                  <li class="list-inline-item" ng-repeat="tech in project.technologies">
-                    <mark>{{tech}}</mark>
-                  </li>
-                </ul>
+                <p class="resume-item-main" ng-bind-html="project.description"></p>
+                <resume-chips source="project.technologies"></resume-chips>
               </md-list-item-text>
               <md-divider ng-if="!$last"></md-divider>
             </md-list-item>
           </md-list>
         </resume-section>
         
-        <resume-section title="Skills" class="hidden-lg-up">
+        <resume-section section-title="Skills" class="hidden-lg-up">
           <md-list ng-controller="SkillsCtrl">
             <md-list-item ng-repeat="skillset in skillsets">
               <md-list-item-text>
                 <h5>{{skillset.title}}</h5>
-                <ul class="list-inline">
-                  <li class="list-inline-item" ng-repeat="skill in skillset.skills">
-                    <mark>{{skill}}</mark>
-                  </li>
-                </ul>
+                <resume-chips source="skillset.skills"></resume-chips>
               </md-list-item-text>
               <md-divider ng-if="!$last"></md-divider>
             </md-list-item>

@@ -1,11 +1,6 @@
 
-
-
 angular
   .module('ResumeApp', ['ngMaterial', 'ngSanitize'])
-  .controller('HeadSkillsCtrl', function($scope) {
-    $scope.skills = ["Front End", "Back End", "Full Stack", "HTML", "CSS", "JavaScript", "Python", "Ruby", "NodeJS", "Ruby on Rails", "OracleSQL", "MongoDB", "TypeScript", "Dart", "CoffeeScript", "Sass", "Bootstrap", "Android SDK", "Perl", "C"];
-  })
   .controller('ExperienceCtrl', function($scope) {
     $scope.jobs = [
       {
@@ -16,7 +11,7 @@ angular
           "Implemented an internal Angular UI/UX best practices website to ensure internal code consistency among all of the products in the Solarwinds web portfolio."
         ],
         technologies: [
-          "HTML", "CSS", "JavaScript", "TypeScript", "NodeJS", "AngularJS", "Angular 2", "ExpressJS", "Grunt", "Gulp", "~!~ Some CI Here ~!~"
+          "HTML", "CSS", "JavaScript", "TypeScript", "NodeJS", "AngularJS", "Angular 2", "Sass", "ExpressJS", "Grunt", "Gulp"
         ]
       },
       {
@@ -26,7 +21,7 @@ angular
           "Implemented a web interface MongoDB replacement for an outdated OracleSQL internal tool, significantly reducing software-as-a-service fees while adding critical permission management features for over 1000 employees."
         ],
         technologies: [
-          "HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "OracleSQL", "SQLite", "AngularJS", "Express.js", "Bootstrap", "Grunt", "Perl", "!!! Some Deployment System Here !!!", "Chai/Mocha (Testing)"
+          "HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "OracleSQL", "SQLite", "AngularJS", "ExpressJS", "Bootstrap", "Perl", "Unit Testing"
         ]
       },
       {
@@ -36,7 +31,7 @@ angular
           "Led a small team to design and implement a web application to provide teachers with an easy way exchange educational resources on various subjects."
         ],
         technologies: [
-          "HTML", "CSS", "JavaScript", "Ruby", "Ruby on Rails", "Bootstrap", ""
+          "HTML", "CSS", "JavaScript", "Ruby", "Ruby on Rails", "Bootstrap", "Unit Testing"
         ]
       },
       {
@@ -55,13 +50,13 @@ angular
     $scope.projects = [
       {
         title: "todolist.social",
-        description: "A todo list application hosted at todolistsocial.herokuapp.com that allows users to keep track of and share their goals with friends, utilizing peer accountability as motivation for users to complete their goals.",
-        technologies: ["HTML", "CSS", "JavaScript", "AngularJS", "NodeJS", "Express.js", "Bootstrap", "SQLite"]
+        description: "A todo list application hosted at <a href='https://todolistsocial.herokuapp.com/'>goo.gl/K8syhR</a> that allows users to keep track of and share their goals with friends, utilizing peer accountability as motivation for users to complete their goals.",
+        technologies: ["HTML", "CSS", "JavaScript", "AngularJS", "NodeJS", "ExpressJS", "Bootstrap", "SQLite"]
       },
       {
         title: "PintOS",
         description: "A stupid OS that I wrote many parts of!",
-        technologies: ["C", "Kernels", "File Systems", "Process Scheduling", "Concurrency"]
+        technologies: ["C", "Kernel Development", "File Systems", "Process Scheduling", "Concurrency"]
       }
     ];
   })
@@ -75,17 +70,17 @@ angular
       {
         short: "Front-End",
         title: "Web Front-End",
-        skills: ["HTML", "CSS", "JavaScript", "TypeScript", "CoffeeScript", "Dart", "AngularJS", "Angular 2", "jQuery", "Bootstrap", "Material Design", "Webpack"]
+        skills: ["HTML", "CSS/SCSS", "JavaScript", "TypeScript", "CoffeeScript", "Dart", "AngularJS", "Angular 2", "jQuery", "Bootstrap", "Material Design", "Webpack", "Unit Testing"]
       },
       {
         short: "Back-End",
         title: "Web Back-End",
-        skills: ["Express.js", "Ruby on Rails", "Heroku (Deployment)", "Docker", "Build Automation", "Continuous Integration", "Concurrency", "Testing Suites"]
+        skills: ["ExpressJS", "Ruby on Rails", "MongoDB", "OracleSQL", "Docker", "Build Automation", "Continuous Integration", "Concurrency", "Unit Testing"]
       },
       {
         short: "Low-Level",
         title: "Low-Level",
-        skills: ["C", "Kernels", "File Systems", "Process Scheduling", "System Calls", "Concurrency"]
+        skills: ["Android SDK", "C", "Kernel Development", "File Systems", "System Calls", "Concurrency"]
       }
     ];
   })
@@ -94,8 +89,17 @@ angular
       restrict: "E",
       templateUrl: "components/resume-section.html",
       scope: {
-        title: "@"
+        title: "@sectionTitle"
       },
       transclude: true
+    };
+  })
+  .directive('resumeChips', function() {
+    return {
+      restrict: "E",
+      templateUrl: "components/resume-chips.html",
+      scope: {
+        source: "="
+      }
     };
   });

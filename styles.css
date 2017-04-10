@@ -4,6 +4,7 @@ html, body {
 
 resume-section md-card-title {
   padding-left: 24px !important;
+/*  font-variant: small-caps;*/
 }
 
 resume-section md-list {
@@ -23,7 +24,7 @@ resume-section md-list md-list-item .resume-item-main {
   text-align: justify;
 }
 
-resume-section md-list md-list-item md-list-item-text > :last-child {
+resume-chips ul {
   margin-bottom: 0px;
 }
 
@@ -39,4 +40,8 @@ resume-section md-card-title, #skills-top md-card-title {
 
 footer {
   font-weight: lighter;
+}
+
+mark {
+  /* TODO */
 }
