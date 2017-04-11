@@ -8,7 +8,7 @@ angular
         position: "UI Intern",
 //        description: "Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
         responsibilities: [
-          "Implemented an internal Angular UI/UX best practices website to ensure internal code consistency among all of the products in the Solarwinds web portfolio."
+          "Implemented an internal Angular UI/UX best practices website to document UI components and ensure internal code consistency among all of the products in the Solarwinds web portfolio."
         ],
         technologies: [
           "HTML", "CSS", "JavaScript", "TypeScript", "NodeJS", "AngularJS", "Angular 2", "Sass", "ExpressJS", "Grunt", "Gulp"
@@ -18,7 +18,7 @@ angular
         company: "Pearson",
         position: "Web App Development Intern", // TODO: Change title to something else, if possible
         responsibilities: [
-          "Implemented a web interface MongoDB replacement for an outdated OracleSQL internal tool, significantly reducing software-as-a-service fees while adding critical permission management features for over 1000 employees."
+          "Implemented a web MongoDB data visualization tool replacement for an outdated OracleSQL internal tool, significantly reducing software-as-a-service fees while adding critical permission management features for over 1000 employees and improving the efficiency of the development-testing lifecycle."
         ],
         technologies: [
           "HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "OracleSQL", "SQLite", "AngularJS", "ExpressJS", "Bootstrap", "Perl", "Unit Testing"
@@ -55,7 +55,7 @@ angular
       },
       {
         title: "PintOS",
-        description: "A stupid OS that I wrote many parts of!",
+        description: "A simple OS I wrote on top of, implementing virtual memory management, system calls, child processes, process scheduling, and a simple ext2 file system.",
         technologies: ["C", "Kernel Development", "File Systems", "Process Scheduling", "Concurrency"],
         hiddenPrint: true
       }
