@@ -83,3 +83,11 @@ footer {
   font-weight: lighter;
   margin-bottom: 0;
 }
+
+#content .hidden-md-up {
+  display: none;
+}
+
+#content .hidden-sm-down {
+  display: inherit !important;
+}

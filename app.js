@@ -12,7 +12,9 @@ angular
         ],
         technologies: [
           "HTML", "CSS", "JavaScript", "TypeScript", "NodeJS", "AngularJS", "Angular 2", "Sass", "ExpressJS", "Grunt", "Gulp"
-        ]
+        ],
+        startDate: "June 2016",
+        endDate: "August 2016"
       },
       {
         company: "Pearson",
@@ -22,7 +24,9 @@ angular
         ],
         technologies: [
           "HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "OracleSQL", "SQLite", "AngularJS", "ExpressJS", "Bootstrap", "Perl", "Unit Testing"
-        ]
+        ],
+        startDate: "May 2015",
+        endDate: "August 2015"
       },
       {
         company: "Educational Design Studios",
@@ -32,7 +36,9 @@ angular
         ],
         technologies: [
           "HTML", "CSS", "JavaScript", "Ruby", "Ruby on Rails", "Bootstrap", "Unit Testing"
-        ]
+        ],
+        startDate: "June 2013",
+        endDate: "June 2014"
       },
       {
         company: "Rackspace Hosting",
@@ -42,7 +48,9 @@ angular
         ],
         technologies: [
           "HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"
-        ]
+        ],
+        startDate: "June 2013",
+        endDate: "August 2013"
       }
     ];
   })

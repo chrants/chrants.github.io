@@ -67,7 +67,10 @@
           <md-list ng-controller="ExperienceCtrl">
             <md-list-item ng-repeat="job in jobs" ng-class="{ 'hidden-print': job.hiddenPrint }">
               <md-list-item-text>
-                <h5>{{job.company}} <br><small class="text-muted">{{job.position}}</small></h5>
+                <span class="row">
+                  <h5 class="col">{{job.company}} <br><small class="text-muted">{{job.position}}</small><span class="hidden-md-up"><br><small class="text-muted">{{job.startDate}} - {{job.endDate}}</small></span></h5>
+                  <h5 class="col col-sm-auto hidden-sm-down">{{job.startDate}} - {{job.endDate}}</h5>
+                </span>
                 <p ng-if="job.description" class="lead mb-0">{{job.description}}</p>
                 <ul class="list-unstyled resume-item-main">
                   <li ng-repeat="responsibility in job.responsibilities">

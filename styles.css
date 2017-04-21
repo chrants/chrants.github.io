@@ -18,6 +18,10 @@ resume-section md-list md-list-item {
   padding-right: 16px !important;
 }
 
+resume-section md-list md-list-item md-list-item-text {
+  width: 100%;
+}
+
 resume-section md-list md-list-item .resume-item-main {
   margin-bottom: 10px;
   text-align: justify;
