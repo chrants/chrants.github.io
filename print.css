@@ -16,12 +16,12 @@ header.jumbotron {
 }
 
 header h1 {
-  font-size: 2.5rem !important;
   margin-left: -5px;
   margin-bottom: 0.25rem;
 }
 
-header #headline {
+header h1 #myName {
+  font-size: 2.5rem !important;
 }
 
 header .lead {
@@ -94,4 +94,8 @@ footer {
 
 #content .hidden-sm-down {
   display: inherit !important;
+}
+
+#printButton {
+  display: none;
 }

@@ -1,3 +1,4 @@
+document.querySelector("#printButton").onclick = function() { window.print(); };
 
 angular
   .module('ResumeApp', ['ngMaterial', 'ngSanitize'])
