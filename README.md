@@ -2,7 +2,7 @@
 
 This project was designed to upgrade my old, boring Word Resume to the 21st Century and will act as its replacement. 
 
-You can even save the website as a PDF or print it as a resume directly in the browser! Select "no margins" and "background graphics" in the browser's print dialog.
+You can even save the website as a PDF or print it as a resume directly in the browser! Select "background graphics" in the browser's print dialog.
 
 __Technologies used:__
 * `HTML`, `CSS`, `JavaScript`
