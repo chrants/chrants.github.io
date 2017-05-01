@@ -25,7 +25,7 @@ header h1 #myName {
 }
 
 header .lead {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 header address br {
