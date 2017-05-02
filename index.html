@@ -116,7 +116,7 @@
         
         <resume-section section-title="References">
           <md-list ng-controller="ReferencesCtrl" class="d-flex flex-lg-row flex-column justify-content-between">
-            <md-list-item ng-repeat="job in jobs" ng-class="{ 'hidden-print': job.hiddenPrint }">
+            <md-list-item ng-repeat="job in jobs" ng-if="job.reference" ng-class="{ 'hidden-print': job.hiddenPrint || job.reference.hiddenPrint }">
               <md-list-item-text>
                 <address>
                   <strong>{{job.company}}</strong> <br>

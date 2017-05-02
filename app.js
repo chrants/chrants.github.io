@@ -12,16 +12,16 @@ jobs = [
       "Implemented an internal Angular UI/UX best practices website to document UI components and ensure internal code consistency among all of the products in the Solarwinds web portfolio."
     ],
     technologies: [
-      "HTML", "CSS", "JavaScript", "TypeScript", "NodeJS", "AngularJS", "Angular 2", "Sass", "ExpressJS", "Grunt", "Gulp"
+      "HTML", "CSS", "JavaScript", "TypeScript", "NodeJS", "AngularJS", "Angular 2", "Sass", "ExpressJS", "Grunt", "Webpack", "Unit Testing"
     ],
     startDate: "June 2016",
-    endDate: "August 2016",
-    reference: {
-      name: "George Reynolds",
-      position: "Manager",
-      contact: "george.reynolds@solarwinds.com",
-      contactType: "mailto:"
-    }
+    endDate: "August 2016"//,
+//    reference: {
+//      name: "George Reynolds",
+//      position: "Manager",
+//      contact: "george.reynolds@solarwinds.com",
+//      contactType: "mailto:"
+//    }
   },
   {
     company: "Pearson",
@@ -37,8 +37,8 @@ jobs = [
     reference: {
       name: "Ankur Kapadia",
       position: "Manager",
-      contact: "12103827948",
-      contactType: "tel:",
+      contact: "anku13@gmail.com",
+      contactType: "mailto:",
     }
   },
   {
@@ -51,13 +51,13 @@ jobs = [
       "HTML", "CSS", "JavaScript", "Ruby", "Ruby on Rails", "Bootstrap", "Unit Testing"
     ],
     startDate: "June 2013",
-    endDate: "June 2014",
-    reference: {
-      name: "Alan Gnospelius",
-      position: "CEO",
-      contact: "linkedin.com/in/alan-p-gnospelius-84429810",
-      contactType: "https://"
-    }
+    endDate: "June 2014"//,
+//    reference: {
+//      name: "Alan Gnospelius",
+//      position: "CEO",
+//      contact: "agnospelius@satx.rr.com",
+//      contactType: "mailto:"
+//    }
   },
   {
     company: "Rackspace Hosting",
@@ -66,16 +66,16 @@ jobs = [
       "Collaborated in a team environment, creating a Ruby web-based application process to streamline the creation and requesting of internships among employees and admins."
     ],
     technologies: [
-      "HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"
+      "HTML", "CSS", "JavaScript", "Ruby", "Sinatra", "Bootstrap"
     ],
     startDate: "June 2013",
-    endDate: "August 2013",
-    reference: {
-      name: "John Smith",
-      position: "Senior Manager",
-      contact: "linkedin.com/in/smithjaaron",
-      contactType: "https://"
-    }
+    endDate: "August 2013" //,
+//    reference: {
+//      name: "John Smith",
+//      position: "Senior Manager",
+//      contact: "smithjaaron@gmail.com",
+//      contactType: "mailto:"
+//    }
   }
 ];
   
