@@ -51,13 +51,13 @@ jobs = [
       "HTML", "CSS", "JavaScript", "Ruby", "Ruby on Rails", "Bootstrap", "Unit Testing"
     ],
     startDate: "June 2013",
-    endDate: "June 2014"//,
-//    reference: {
-//      name: "Alan Gnospelius",
-//      position: "CEO",
-//      contact: "agnospelius@satx.rr.com",
-//      contactType: "mailto:"
-//    }
+    endDate: "June 2014",
+    reference: {
+      name: "Alan Gnospelius",
+      position: "CEO",
+      contact: "agnospelius@satx.rr.com",
+      contactType: "mailto:"
+    }
   },
   {
     company: "Rackspace Hosting",
