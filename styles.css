@@ -40,6 +40,10 @@ resume-section md-card-title, #skills-top md-card-title {
   max-width: 1186px;
 }
 
+#content address {
+  margin: 0;
+}
+
 footer {
   overflow: auto;
   font-weight: lighter;

@@ -3,7 +3,8 @@
 }
 
 html, body {
-  overflow: hidden;
+  overflow: visible !important;
+  background-color: white;
 }
 
 .container {
@@ -79,15 +80,6 @@ md-list-item .md-list-item-inner:before, md-list-item:before {
   min-height: 0px;
 }
 
-footer {
-  position: fixed !important;
-  left: 0;
-  right: 0;
-  bottom: 0.4in !important;
-  font-weight: lighter;
-  margin-bottom: 0;
-}
-
 #content .hidden-md-up {
   display: none;
 }
@@ -98,4 +90,30 @@ footer {
 
 #printButton {
   display: none;
+}
+
+.container {
+  page-break-inside: auto !important;
+}
+
+resume-section {
+  display: block;
+  page-break-after: auto;
+}
+
+resume-section md-list-item {
+  page-break-after: auto !important;
+}
+
+footer {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  bottom: 0.4in !important;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+.page-break {
+  page-break-after: always;
 }

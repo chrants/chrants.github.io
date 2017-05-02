@@ -112,6 +112,23 @@
           </md-list>
         </resume-section>
         
+        <div class="page-break"></div>
+        
+        <resume-section section-title="References">
+          <md-list ng-controller="ReferencesCtrl" class="d-flex flex-lg-row flex-column justify-content-between">
+            <md-list-item ng-repeat="job in jobs" ng-class="{ 'hidden-print': job.hiddenPrint }">
+              <md-list-item-text>
+                <address>
+                  <strong>{{job.company}}</strong> <br>
+                  <span>{{job.reference.name}} - {{job.reference.position}}</span> <br>
+                  <a href="{{job.reference.contactType}}{{job.reference.contact}}">{{job.reference.contact}}</a>
+                </address>
+              </md-list-item-text>
+              <md-divider ng-class="hidden-lg-up" ng-if="!$last"></md-divider>
+            </md-list-item>
+          </md-list>
+        </resume-section>
+        
       </div>
       
     </div>

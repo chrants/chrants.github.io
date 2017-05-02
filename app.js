@@ -2,7 +2,7 @@ document.querySelector("#printButton").onclick = function() { window.print(); };
 
 (function() {
   
-var jobs, projects, skillsets;
+var jobs, projects, skillsets, references;
 
 jobs = [
   {
@@ -15,7 +15,13 @@ jobs = [
       "HTML", "CSS", "JavaScript", "TypeScript", "NodeJS", "AngularJS", "Angular 2", "Sass", "ExpressJS", "Grunt", "Gulp"
     ],
     startDate: "June 2016",
-    endDate: "August 2016"
+    endDate: "August 2016",
+    reference: {
+      name: "George Reynolds",
+      position: "Manager",
+      contact: "george.reynolds@solarwinds.com",
+      contactType: "mailto:"
+    }
   },
   {
     company: "Pearson",
@@ -27,7 +33,13 @@ jobs = [
       "HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "OracleSQL", "SQLite", "AngularJS", "ExpressJS", "Bootstrap", "Perl", "Unit Testing"
     ],
     startDate: "May 2015",
-    endDate: "August 2015"
+    endDate: "August 2015",
+    reference: {
+      name: "Ankur Kapadia",
+      position: "Manager",
+      contact: "12103827948",
+      contactType: "tel:",
+    }
   },
   {
     company: "Educational Design Studios",
@@ -39,7 +51,13 @@ jobs = [
       "HTML", "CSS", "JavaScript", "Ruby", "Ruby on Rails", "Bootstrap", "Unit Testing"
     ],
     startDate: "June 2013",
-    endDate: "June 2014"
+    endDate: "June 2014",
+    reference: {
+      name: "Alan Gnospelius",
+      position: "CEO",
+      contact: "linkedin.com/in/alan-p-gnospelius-84429810",
+      contactType: "https://"
+    }
   },
   {
     company: "Rackspace Hosting",
@@ -51,7 +69,13 @@ jobs = [
       "HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"
     ],
     startDate: "June 2013",
-    endDate: "August 2013"
+    endDate: "August 2013",
+    reference: {
+      name: "John Smith",
+      position: "Senior Manager",
+      contact: "linkedin.com/in/smithjaaron",
+      contactType: "https://"
+    }
   }
 ];
   
@@ -103,6 +127,9 @@ angular
   })
   .controller('SkillsCtrl', function($scope) {
     $scope.skillsets = skillsets;
+  })
+  .controller('ReferencesCtrl', function($scope) {
+    $scope.jobs = jobs;
   })
   .directive('resumeSection', function() {
     return {
