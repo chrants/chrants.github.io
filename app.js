@@ -43,9 +43,9 @@ jobs = [
   },
   {
     company: "Educational Design Studios",
-    position: "Full-Stack Developer",
+    position: "Full-Stack Developer (Freelance)",
     responsibilities: [
-      "Led a small team to design and implement a web application to provide teachers with an easy way exchange educational resources on various subjects."
+      "Designed and implemented a website with a Ruby on Rails backend to provide teachers with an easy way to exchange educational resources on various subjects."
     ],
     technologies: [
       "HTML", "CSS", "JavaScript", "Ruby", "Ruby on Rails", "Bootstrap", "Unit Testing"
@@ -63,7 +63,7 @@ jobs = [
     company: "Rackspace Hosting",
     position: "Full-Stack Intern",
     responsibilities: [
-      "Collaborated in a team environment, creating a Ruby web-based application process to streamline the creation and requesting of internships among employees and admins."
+      "Collaborated in a team environment, creating a Ruby web-based application process to streamline the application process for intern candidates and their communications with intern-seeking employees."
     ],
     technologies: [
       "HTML", "CSS", "JavaScript", "Ruby", "Sinatra", "Bootstrap"
@@ -102,7 +102,7 @@ skillsets = [
   {
     short: "Front-End",
     title: "Web Front-End",
-    skills: ["HTML", "CSS/SCSS", "JavaScript", "TypeScript", "CoffeeScript", "Dart", "AngularJS", "Angular 2", "React", "jQuery", "Bootstrap", "Material Design", "Webpack", "Unit Testing"]
+    skills: ["HTML", "CSS/SCSS", "JavaScript", "AngularJS", "Angular 2+", "React", "Redux", "RxJS", "TypeScript", "CoffeeScript", "Dart",  "jQuery", "Bootstrap", "Material Design", "Webpack", "Unit Testing"]
   },
   {
     short: "Back-End",

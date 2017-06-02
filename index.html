@@ -24,12 +24,13 @@
         <h1>
           <span id="myName" class="display-3 hidden-sm-down">Christian A. Tschoepe</span>
           <span id="myName" class="display-4 hidden-md-up">Christian A. Tschoepe</span>
-          <a href="" id="printButton" title="Print"><md-icon md-svg-src="/img/ic_print_black_24px.svg"> oentuhnteouh oeunth</md-icon></a>
+          <a href="" id="printButton" title="Print"><md-icon md-svg-src="/img/ic_print_black_24px.svg"> print </md-icon></a>
         </h1>
         <div id="headline" class="row">
-          <div id="intro" class="lead col text-justify hidden-print">
-            <p><strong>Aspiring Software Developer.</strong> I have experience in full-stack Web Development, but would love to explore OS or Mobile Development! Currently, I am pursuing a full-time software position.</p>
-            <p class="hidden-print">After having gone through a lot recently, I am currently taking an extended break from school to have a fresh start and adventure out into the world!</p>
+          <div id="intro" class="lead col text-justify">
+            <p><strong>Full-Stack Web Developer</strong> pursuing full-time Software Development positions. I have had a lot of experience from personal projects and internships in Full-Stack Web Development, but would love to explore OS or Mobile Development professionally.</p> 
+
+            <p>My latest projects include a responsive chat application that can handle many clients (<mark>Angular 4</mark>, <mark>RxJS</mark>, <mark>Redux</mark>, and <mark>WebSockets</mark>) and upgrading my Resume to the 21st century (<mark>AngularJS</mark>).</p>
           </div>
           <address class="lead col col-12 col-lg-auto">
             <a href="mailto:tschoepe.christian@gmail.com">tschoepe.christian@gmail.com</a> <br>
@@ -45,7 +46,7 @@
       
       <!-- SKILLS SECTION -->
       <div class="hidden-md-down hidden-print mb-3">
-        <div id="skills-top" class="bg-faded pt-5 pb-5">
+        <div id="skills-top" class="bg-faded pt-4 pb-4">
           <div class="container-fluid">
 <!--            <h2 class="md-headline text-center"><span class="md-whiteframe-1dp p-2 bg-faded">Skills</span></h2>-->
             <div ng-controller="SkillsCtrl" layout="row" layout-align="space-between stretch">
@@ -86,19 +87,6 @@
             </md-list-item>
           </md-list>
         </resume-section>
-
-        <resume-section section-title="Selected Projects">
-          <md-list ng-controller="ProjectsCtrl">
-            <md-list-item ng-repeat="project in projects" ng-class="{ 'hidden-print': project.hiddenPrint }">
-              <md-list-item-text>
-                <h5>{{project.title}}</h5>
-                <p class="resume-item-main" ng-bind-html="project.description"></p>
-                <resume-chips source="project.technologies"></resume-chips>
-              </md-list-item-text>
-              <md-divider ng-if="!$last"></md-divider>
-            </md-list-item>
-          </md-list>
-        </resume-section>
         
         <resume-section section-title="Skills" class="hidden-lg-up">
           <md-list ng-controller="SkillsCtrl">
@@ -113,6 +101,25 @@
         </resume-section>
         
         <div class="page-break"></div>
+        
+        <resume-section section-title="Selected Projects">
+          <md-list ng-controller="ProjectsCtrl">
+            <md-list-item ng-repeat="project in projects" ng-class="{ 'hidden-print': project.hiddenPrint }">
+              <md-list-item-text>
+                <h5 ng-if="project.title">{{project.title}}</h5>
+                <p class="resume-item-main" ng-bind-html="project.description"></p>
+                <resume-chips source="project.technologies"></resume-chips>
+              </md-list-item-text>
+              <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+            <md-divider></md-divider>
+            <md-list-item>
+              <md-list-item-text>
+                <strong>Note: For more projects</strong>, please check my <a href="https://www.github.com/chrants">GitHub</a> or contact me at a contact listed above. Many of my projects are not hosted publicly but are available at request as I may grow them into something bigger one day.
+              </md-list-item-text>
+            </md-list-item>
+          </md-list>
+        </resume-section>
         
         <resume-section section-title="References">
           <md-list ng-controller="ReferencesCtrl" class="d-flex flex-lg-row flex-column justify-content-between">

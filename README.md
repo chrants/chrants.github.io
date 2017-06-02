@@ -11,3 +11,5 @@ __Technologies used:__
 * `Bootstrap 4` (alpha 6)
 
 View this site at [chrants.github.io](https://chrants.github.io/ "Resumé (Site)")
+
+Many of my projects are not on GitHub publicly as I might want to grow them into a company one day. For more projects not listed here, please contact me at the contacts listed on my website.

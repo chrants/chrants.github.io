@@ -2,6 +2,10 @@ html, body {
   overflow: auto;
 }
 
+header h1 .display-4 {
+  font-size: 2.75rem;
+}
+
 resume-section md-card-title {
   padding-left: 24px !important;
 }
@@ -38,6 +42,27 @@ resume-section md-card-title, #skills-top md-card-title {
 
 .container-fluid {
   max-width: 1186px;
+}
+
+#content .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#content .container resume-section[section-title="Professional Experience"] {
+  order: 1;
+}
+
+#content .container resume-section[section-title="Selected Projects"] {
+  order: 2;
+}
+
+#content .container resume-section[section-title="Skills"] {
+  order: 3;
+}
+
+#content .container resume-section[section-title="References"] {
+  order: 4;
 }
 
 #content address {
