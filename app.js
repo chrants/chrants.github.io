@@ -83,7 +83,7 @@ projects = [
   {
     title: "MoFi",
     description: "A Tinder-style application created at Junction 2017 that helps groups decide on a movie to watch based on the moods of the group. I was in charge of the Back-End.",
-    technologies: ["KoaJS", "Mongoose", "MongoDB", "React"]
+    technologies: ["Koa", "Mongoose", "MongoDB", "React"]
   },
   {
     title: "todolist.social",
