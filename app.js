@@ -81,6 +81,11 @@ jobs = [
   
 projects = [
   {
+    title: "MoFi",
+    description: "A Tinder-style application created at Junction 2017 that helps groups decide on a movie to watch based on the moods of the group. I was in charge of the Back-End.",
+    technologies: ["KoaJS", "Mongoose", "MongoDB", "React"]
+  },
+  {
     title: "todolist.social",
     description: "A todo list application hosted at <a href='https://todolistsocial.herokuapp.com/'>goo.gl/K8syhR</a> that allows users to keep track of and share their goals with friends, utilizing peer accountability as motivation for users to complete their goals.",
     technologies: ["HTML", "CSS", "JavaScript", "AngularJS", "NodeJS", "ExpressJS", "Bootstrap", "SQLite"]
@@ -97,22 +102,22 @@ skillsets = [
   {
     short: "Languages",
     title: "Programming Languages",
-    skills: ["JavaScript", "Java", "Python", "Ruby", "CoffeeScript", "TypeScript", "Dart", "C", "Perl", "Prolog"]
+    skills: ["JavaScript", "Java", "Python", "Ruby", "CoffeeScript", "TypeScript", "Dart", "C", "Rust", "Perl", "Prolog"]
   },
   {
     short: "Front-End",
     title: "Web Front-End",
-    skills: ["HTML", "CSS/SCSS", "JavaScript", "AngularJS", "Angular 2+", "React", "Redux", "RxJS", "TypeScript", "CoffeeScript", "Dart",  "jQuery", "Bootstrap", "Material Design", "Webpack", "Unit Testing"]
+    skills: ["HTML", "CSS/SCSS", "JavaScript", "AngularJS", "Angular 2+", "React", "Redux", "RxJS", "TypeScript", "CoffeeScript", "Dart", "jQuery", "Bootstrap", "Unit Testing"]
   },
   {
     short: "Back-End",
     title: "Web Back-End",
-    skills: ["ExpressJS", "Ruby on Rails", "MongoDB", "OracleSQL", "Docker", "Build Automation", "Continuous Integration", "Concurrency", "Unit Testing"]
+    skills: ["ExpressJS", "Ruby on Rails", "MongoDB", "GraphQL", "OracleSQL", "Docker", "Build Tools", "CI Tools", "Concurrency", "Unit Testing"]
   },
   {
     short: "Low-Level",
     title: "Low-Level",
-    skills: ["Android SDK", "C", "Kernel Development", "File Systems", "System Calls", "Concurrency"],
+    skills: ["Android SDK", "C", "Rust", "Kernel Development", "File Systems", "System Calls", "Concurrency"],
     hiddenPrint: true
   }
 ];
