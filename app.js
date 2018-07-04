@@ -6,16 +6,30 @@ var jobs, projects, skillsets, references;
 
 jobs = [
   {
+    company: "Gofore",
+    position: "Software Developer",
+    responsibilities: [
+      "Founded and led a project to automate the company's internal cloud billing processes, reducing management costs by €1000s per month and improving reliability of billing processes.",
+      "Utilized natural language chat bot solutions (<mark>DialogFlow</mark>) on internal sales data to help developers and designers find and request relevant projects using technologies of their interests.",
+      "Delivered expertise for a <mark>React</mark> web-based application for a non-disclosed (NDA) client, increasing the technical competancy of their team.",
+    ],
+    technologies: [
+      "Python", "Flask", "JavaScript", "TypeScript", "Node.js", "React", "Redux", "Angular 2", "Express", "Webpack", "Unit Testing"
+    ],
+    startDate: "February 2018",
+    endDate: "Present",
+  },
+  {
     company: "SolarWinds",
     position: "UI Intern",
     responsibilities: [
       "Implemented an internal Angular UI/UX best practices website to document UI components and ensure internal code consistency among all of the products in the Solarwinds web portfolio."
     ],
     technologies: [
-      "HTML", "CSS", "JavaScript", "TypeScript", "NodeJS", "AngularJS", "Angular 2", "Sass", "ExpressJS", "Grunt", "Webpack", "Unit Testing"
+      "HTML", "CSS", "JavaScript", "TypeScript", "Node.js", "AngularJS", "Angular 2", "Sass", "ExpressJS", "Grunt", "Webpack", "Unit Testing"
     ],
     startDate: "June 2016",
-    endDate: "August 2016"//,
+    endDate: "August 2016",
 //    reference: {
 //      name: "George Reynolds",
 //      position: "Manager",
@@ -30,7 +44,7 @@ jobs = [
       "Implemented a web MongoDB data visualization tool replacement for an outdated OracleSQL internal tool, significantly reducing software-as-a-service fees while adding critical permission management features for over 1000 employees and improving the efficiency of the development-testing lifecycle."
     ],
     technologies: [
-      "HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "OracleSQL", "SQLite", "AngularJS", "ExpressJS", "Bootstrap", "Perl", "Unit Testing"
+      "HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "OracleSQL", "SQLite", "AngularJS", "ExpressJS", "Bootstrap", "Perl", "Unit Testing"
     ],
     startDate: "May 2015",
     endDate: "August 2015",
@@ -43,7 +57,7 @@ jobs = [
   },
   {
     company: "Educational Design Studios",
-    position: "Full-Stack Developer (Freelance)",
+    position: "Full-Stack Developer",
     responsibilities: [
       "Designed and implemented a website with a Ruby on Rails backend to provide teachers with an easy way to exchange educational resources on various subjects."
     ],
@@ -69,7 +83,7 @@ jobs = [
       "HTML", "CSS", "JavaScript", "Ruby", "Sinatra", "Bootstrap"
     ],
     startDate: "June 2013",
-    endDate: "August 2013" //,
+    endDate: "August 2013",
 //    reference: {
 //      name: "John Smith",
 //      position: "Senior Manager",
@@ -88,7 +102,7 @@ projects = [
   {
     title: "todolist.social",
     description: "A todo list application hosted at <a href='https://todolistsocial.herokuapp.com/'>goo.gl/K8syhR</a> that allows users to keep track of and share their goals with friends, utilizing peer accountability as motivation for users to complete their goals.",
-    technologies: ["HTML", "CSS", "JavaScript", "AngularJS", "NodeJS", "ExpressJS", "Bootstrap", "SQLite"]
+    technologies: ["HTML", "CSS", "JavaScript", "AngularJS", "Node.js", "ExpressJS", "Bootstrap", "SQLite"]
   },
   {
     title: "PintOS",
