@@ -11,7 +11,7 @@ jobs = [
     responsibilities: [
       "Founded and led a project to automate the company's internal cloud billing processes, reducing management costs by €1000s per month and improving reliability of billing processes.",
       "Utilized natural language chat bot solutions (<mark>DialogFlow</mark>) on internal sales data to help developers and designers find and request relevant projects using technologies of their interests.",
-      "Delivered expertise for a <mark>React</mark> web-based application for a non-disclosed (NDA) client, increasing the technical competancy of their team.",
+      "Delivered expertise for a <mark>React</mark> web-based application for a non-disclosed (NDA) client, increasing the technical competency of their team.",
     ],
     technologies: [
       "Python", "Flask", "JavaScript", "TypeScript", "Node.js", "React", "Redux", "Angular 2", "Express", "Webpack", "Unit Testing"
