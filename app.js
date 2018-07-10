@@ -10,14 +10,20 @@ jobs = [
     position: "Software Developer",
     responsibilities: [
       "Founded and led a project to automate the company's internal cloud billing processes, reducing management costs by €1000s per month and improving reliability of billing processes.",
-      "Utilized natural language chat bot solutions (<mark>DialogFlow</mark>) on internal sales data to help developers and designers find and request relevant projects using technologies of their interests.",
-      "Delivered expertise for a <mark>React</mark> web-based application for a non-disclosed (NDA) client, increasing the technical competency of their team.",
+      "Utilized natural language chat bot solutions (DialogFlow) on internal sales data to help developers and designers find and request relevant projects using technologies of their interests.",
+      "Delivered expertise for a React web-based application for a non-disclosed (NDA) client, increasing the technical competency of their team.",
     ],
     technologies: [
-      "Python", "Flask", "JavaScript", "TypeScript", "Node.js", "React", "Redux", "Angular 2", "Express", "Webpack", "Unit Testing"
+      "Python", "Flask", "JavaScript", "TypeScript", "Node.js", "React", "Redux", "Angular 2", "Express", "Webpack", "Unit Testing", "AWS S3", "AWS EC2", "AWS Lambda"
     ],
     startDate: "February 2018",
     endDate: "Present",
+    reference: {
+      name: "Juho Salmi",
+      position: "Product Owner",
+      contact: "+358405377012",
+      contactType: "tel:"
+    }
   },
   {
     company: "SolarWinds",
@@ -100,6 +106,11 @@ projects = [
     technologies: ["Koa", "Mongoose", "MongoDB", "React"]
   },
   {
+    title: "NinjaPup OS",
+    description: "Basic Operating System written with Rust nightly. The goal is to have a fully functional OS for IOT devices, drastically simplifying IOT device setup and code.",
+    technologies: ["Rust", "Kernel Development"]
+  },
+  {
     title: "todolist.social",
     description: "A todo list application hosted at <a href='https://todolistsocial.herokuapp.com/'>goo.gl/K8syhR</a> that allows users to keep track of and share their goals with friends, utilizing peer accountability as motivation for users to complete their goals.",
     technologies: ["HTML", "CSS", "JavaScript", "AngularJS", "Node.js", "ExpressJS", "Bootstrap", "SQLite"]
@@ -121,7 +132,7 @@ skillsets = [
   {
     short: "Front-End",
     title: "Web Front-End",
-    skills: ["HTML", "CSS/SCSS", "JavaScript", "AngularJS", "Angular 2+", "React", "Redux", "RxJS", "TypeScript", "CoffeeScript", "Dart", "jQuery", "Bootstrap", "Unit Testing"]
+    skills: ["HTML", "CSS/SCSS", "JavaScript", "AngularJS", "Angular 2+", "React", "Redux", "RxJS", "TypeScript", "CoffeeScript", "Dart", "jQuery", "Unit Testing"]
   },
   {
     short: "Back-End",
