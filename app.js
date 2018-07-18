@@ -127,7 +127,7 @@ skillsets = [
   {
     short: "Languages",
     title: "Programming Languages",
-    skills: ["JavaScript", "Java", "Python", "Ruby", "CoffeeScript", "TypeScript", "Dart", "C", "Rust", "Perl", "Prolog"]
+    skills: ["JavaScript", "Java", "Python", "Ruby", "CoffeeScript", "TypeScript", "Dart", "C", "C++", "Rust", "Perl", "Prolog"]
   },
   {
     short: "Front-End",
@@ -142,7 +142,7 @@ skillsets = [
   {
     short: "Low-Level",
     title: "Low-Level",
-    skills: ["Android SDK", "C", "Rust", "Kernel Development", "File Systems", "System Calls", "Concurrency"],
+    skills: ["Android SDK", "C", "C++", "Rust", "Kernel Development", "File Systems", "System Calls", "Concurrency"],
     hiddenPrint: true
   }
 ];
