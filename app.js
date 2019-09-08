@@ -2,22 +2,43 @@ document.querySelector("#printButton").onclick = function() { window.print(); };
 
 (function() {
   
-var jobs, projects, skillsets, references;
+var jobs, projects, skillsets;
 
 jobs = [
+  {
+    company: "Smartly.io",
+    position: "Full-stack Developer",
+    responsibilities: [
+      "Owned and maintained our company UI component library (React, TypeScript) in close collaboration with product designers, powering my company to rapidly prototype under a coherent design system.",
+      "Interviewed engineering candidates in the technical round on a survey of front-end, back-end and general technical software skills, enabling us to achieve our ambitious hiring goals.",
+      "Developed the company's asset management system integrated across our product (Ruby on Rails, TypeScript), allowing customers to quickly upload, preview, and reuse assets in ads and our image and video editors.",
+      "Developed the text engine and asset library integration in our web-based video editor."
+    ],
+    technologies: [
+      "TypeScript", "JavaScript", "React", "Redux", "Ruby", "Rails", "PHP", "Python"
+    ],
+    startDate: "September 2018",
+    endDate: "Present",
+    // reference: {
+    //   name: "",
+    //   position: "Engineering Team Lead",
+    //   contact: "",
+    //   contactType: "tel:"
+    // }
+  },
   {
     company: "Gofore",
     position: "Software Developer",
     responsibilities: [
       "Founded and led a project to automate the company's internal cloud billing processes, reducing management costs by €1000s per month and improving reliability of billing processes.",
       "Utilized natural language chat bot solutions (DialogFlow) on internal sales data to help developers and designers find and request relevant projects using technologies of their interests.",
-      "Delivered expertise for a React web-based application for a non-disclosed (NDA) client, increasing the technical competency of their team.",
+      "Developed and shared expertise for a React web app for a non-disclosed (NDA) client.",
     ],
     technologies: [
-      "Python", "Flask", "JavaScript", "TypeScript", "Node.js", "React", "Redux", "Angular 2", "Express", "Webpack", "Unit Testing", "AWS S3", "AWS EC2", "AWS Lambda"
+      "Python", "Flask", "JavaScript", "TypeScript", "Node.js", "React", "Redux", "Angular 2", "Express", "Unit Testing", "AWS S3", "AWS Lambda"
     ],
     startDate: "February 2018",
-    endDate: "Present",
+    endDate: "September 2018",
     reference: {
       name: "Juho Salmi",
       position: "Product Owner",
@@ -127,7 +148,7 @@ skillsets = [
   {
     short: "Languages",
     title: "Programming Languages",
-    skills: ["JavaScript", "Java", "Python", "Ruby", "CoffeeScript", "TypeScript", "Dart", "C", "C++", "Rust", "Perl", "Prolog"]
+    skills: ["JavaScript", "TypeScript", "Java", "Python", "Ruby", "PHP", "CoffeeScript", "Dart", "C", "Rust", "Perl"]
   },
   {
     short: "Front-End",

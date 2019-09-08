@@ -3,7 +3,8 @@
   margin-bottom: 0.4in;
 }
 
-html, body {
+html,
+body {
   overflow: visible !important;
   background-color: white;
 }
@@ -13,7 +14,7 @@ html, body {
 }
 
 header.jumbotron {
-  padding-top: 3rem !important;
+  padding-top: 2rem !important;
   padding-bottom: 0.2rem !important;
 }
 
@@ -22,7 +23,7 @@ header h1 {
 }
 
 header h1 #myName {
-  font-size: 2.5rem !important;
+  font-size: 1.75rem !important;
 }
 
 header .lead {
@@ -76,7 +77,8 @@ md-divider {
   display: none;
 }
 
-md-list-item .md-list-item-inner:before, md-list-item:before {
+md-list-item .md-list-item-inner:before,
+md-list-item:before {
   min-height: 0px;
 }
 
