@@ -1,11 +1,9 @@
-document.querySelector("#printButton").onclick = function() {
+document.querySelector("#printButton").onclick = () => {
   window.print();
 };
 
-(function() {
-  var jobs, projects, skillsets;
-
-  jobs = [
+(() => {
+  const jobs = [
     {
       company: "Smartly.io",
       position: "Full-stack Developer",
@@ -150,7 +148,7 @@ document.querySelector("#printButton").onclick = function() {
     }
   ];
 
-  projects = [
+  const projects = [
     {
       title: "MoFi",
       description:
@@ -193,7 +191,7 @@ document.querySelector("#printButton").onclick = function() {
     }
   ];
 
-  skillsets = [
+  const skillsets = [
     {
       short: "Languages",
       title: "Programming Languages",
@@ -259,8 +257,7 @@ document.querySelector("#printButton").onclick = function() {
         "System Calls",
         "Concurrency"
       ],
-      hiddenPrint: true,
-      hidden: true
+      hiddenPrint: true
     }
   ];
 
