@@ -11,7 +11,7 @@ document.querySelector("#printButton").onclick = () => {
         "Owned the company UI component library (React, TypeScript) in close collaboration with product designers.",
         "Interviewed engineering candidates in the technical round on a survey of front-end, back-end and general technical software skills.",
         "Implemented the company's video and image management system integrated across our product (Rails, TypeScript), allowing customers to quickly upload, preview, and reuse assets in ads and our image and video editors.",
-        "Developed the text engine in our web-based video editor."
+        "Developed the text engine in our web-based video editor and renderer."
       ],
       technologies: [
         "TypeScript",
