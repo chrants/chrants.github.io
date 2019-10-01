@@ -21,7 +21,8 @@ document.querySelector("#printButton").onclick = () => {
         "Ruby",
         "Rails",
         "PHP",
-        "Python"
+        "Python",
+        "Docker"
       ],
       startDate: "September 2018",
       endDate: "Present"
