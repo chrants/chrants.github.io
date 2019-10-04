@@ -38,7 +38,7 @@ document.querySelector("#printButton").onclick = () => {
       position: "Software Developer",
       responsibilities: [
         "Founded and led a project to automate the company's internal cloud billing processes, reducing management costs by €1000s per month and improving reliability of billing processes.",
-        "Utilized natural language chat bot solutions (DialogFlow) on internal sales data to help developers and designers find and request relevant projects using technologies of their interests.",
+        "Utilized natural language chat bot solutions (DialogFlow) on internal sales data to help developers and designers request relevant projects using technologies of their interests.",
         "Developed and shared expertise for a React web app for a non-disclosed (NDA) client."
       ],
       technologies: [
@@ -91,7 +91,7 @@ document.querySelector("#printButton").onclick = () => {
       company: "Pearson",
       position: "Full-Stack Intern",
       responsibilities: [
-        "Implemented a web MongoDB data visualization tool replacement for an outdated OracleSQL internal tool, significantly reducing software-as-a-service fees while adding critical permission management features for over 1000 employees and improving the efficiency of the development-testing lifecycle."
+        "Implemented and shipped a web MongoDB data visualization tool replacement for an outdated OracleSQL internal tool, significantly reducing software-as-a-service fees while adding critical permission management features for over 1000 employees and improving the efficiency of the development-testing lifecycle."
       ],
       technologies: [
         "HTML",
@@ -159,7 +159,7 @@ document.querySelector("#printButton").onclick = () => {
     {
       title: "NinjaPup OS",
       description:
-        "Basic Operating System written with Rust nightly. The goal is to have a fully functional OS for IOT devices, drastically simplifying IOT device setup and code.",
+        "Basic Operating System written with Rust nightly with paged x86 64-bit memory management.",
       technologies: ["Rust", "Kernel Development"]
     },
     {
