@@ -47,7 +47,7 @@ resume-section md-list md-list-item :not(h5) {
 }
 
 resume-section md-list md-list-item h5 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 3px;
 }
 
@@ -58,7 +58,7 @@ resume-section md-card-title {
 }
 
 resume-section md-card-title .md-headline {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 0px;
 }
 
@@ -70,7 +70,12 @@ resume-section md-list md-list-item {
 }
 
 resume-section md-list md-list-item .resume-item-main {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+}
+
+resume-section md-list md-list-item .resume-item-main .resume-item-main-content {
+  margin-bottom: 6px;
+  line-height: 1.4;
 }
 
 md-divider {

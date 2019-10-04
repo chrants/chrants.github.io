@@ -80,7 +80,7 @@
                 </span>
                 <p ng-if="job.description" class="lead mb-0">{{job.description}}</p>
                 <ul class="list-unstyled resume-item-main">
-                  <li ng-repeat="responsibility in job.responsibilities">
+                  <li class="resume-item-main-content" ng-repeat="responsibility in job.responsibilities">
                     <span ng-bind-html="responsibility"></span>
                   </li>
                 </ul>
@@ -110,7 +110,9 @@
             <md-list-item ng-repeat="project in projects" ng-class="{ 'hidden-print': project.hiddenPrint }">
               <md-list-item-text>
                 <h5 ng-if="project.title">{{project.title}}</h5>
-                <p class="resume-item-main" ng-bind-html="project.description"></p>
+                <div class="resume-item-main">
+                  <p class="resume-item-main-content" ng-bind-html="project.description"></p>
+                </div>
                 <resume-chips source="project.technologies"></resume-chips>
               </md-list-item-text>
               <md-divider ng-if="!$last"></md-divider>
