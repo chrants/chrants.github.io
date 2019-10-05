@@ -27,7 +27,7 @@ resume-section md-list md-list-item md-list-item-text {
 }
 
 resume-section md-list md-list-item .resume-item-main {
-  margin-bottom: 12px;
+  margin-bottom: 0;
   text-align: justify;
 }
 
@@ -80,6 +80,8 @@ footer {
   margin-bottom: 10px;
 }
 
-mark {
-  /* TODO */
+.resume-technology-chip {
+  background-color: #fcf8e3;
+  padding: .1em;
+  margin-right: 2px;
 }

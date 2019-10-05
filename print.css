@@ -53,8 +53,8 @@ resume-section md-list md-list-item h5 {
 
 resume-section md-card-title {
   padding-left: 12px !important;
-  padding-top: 3px;
-  padding-bottom: 1px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 resume-section md-card-title .md-headline {
@@ -70,7 +70,7 @@ resume-section md-list md-list-item {
 }
 
 resume-section md-list md-list-item .resume-item-main {
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 
 resume-section md-list md-list-item .resume-item-main .resume-item-main-content {

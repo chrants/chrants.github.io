@@ -8,9 +8,9 @@ document.querySelector("#printButton").onclick = () => {
       company: "Smartly.io",
       position: "Full-stack Developer",
       responsibilities: [
-        "Owned the company UI component library (React, TypeScript) in close collaboration with product designers.",
+        "Developed the text engine in our web-based video editor and renderer, which is used to produce millions of video ads from Fortune 500 customers.",
         "Implemented our video and image management system integrated across our product (Rails, TypeScript), allowing customers to quickly upload, preview, and reuse assets in ads and our image and video editors.",
-        "Developed the text engine in our web-based video editor and renderer.",
+        "Owned the company UI component library (React, TypeScript) in close collaboration with product designers.",
         "Interviewed engineering candidates on a survey of front-end, back-end and general technical software skills."
       ],
       technologies: [
@@ -39,7 +39,6 @@ document.querySelector("#printButton").onclick = () => {
       responsibilities: [
         "Founded and led a project to automate the company's internal cloud billing processes, reducing management costs by €1000s per month and improving reliability of billing processes.",
         "Utilized natural language chat bot solutions (DialogFlow) on internal sales data to help developers and designers request relevant projects using technologies of their interests.",
-        "Developed and shared expertise for a React web app for a non-disclosed (NDA) client."
       ],
       technologies: [
         "Python",
@@ -68,7 +67,7 @@ document.querySelector("#printButton").onclick = () => {
       company: "SolarWinds",
       position: "UI Intern",
       responsibilities: [
-        "Implemented an internal Angular UI/UX best practices website to document UI components and ensure internal code consistency among all of the products in the Solarwinds web portfolio."
+        "Implemented an internal Angular UI/UX documentation site for developers across the Solarwinds web portfolio."
       ],
       technologies: [
         "HTML",
@@ -91,7 +90,7 @@ document.querySelector("#printButton").onclick = () => {
       company: "Pearson",
       position: "Full-Stack Intern",
       responsibilities: [
-        "Implemented and shipped a web MongoDB data visualization tool replacement for an outdated OracleSQL internal tool, significantly reducing software-as-a-service fees while adding critical permission management features for over 1000 employees and improving the efficiency of the development-testing lifecycle."
+        "Deployed a web MongoDB data visualization tool for over 1000 employees, replacing an expensive software-as-a-service OracleSQL tool, while improving the efficiency of the development-testing lifecycle."
       ],
       technologies: [
         "HTML",
