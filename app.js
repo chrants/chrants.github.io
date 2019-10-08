@@ -64,27 +64,6 @@ document.querySelector("#printButton").onclick = () => {
       }
     },
     {
-      company: "SolarWinds",
-      position: "UI Intern",
-      responsibilities: [],
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "TypeScript",
-        "Node.js",
-        "AngularJS",
-        "Angular 2",
-        "Sass",
-        "ExpressJS",
-        "Grunt",
-        "Webpack",
-        "Unit Testing"
-      ],
-      startDate: "June 2016",
-      endDate: "August 2016"
-    },
-    {
       company: "Pearson",
       position: "Full-Stack Intern",
       responsibilities: [
@@ -112,6 +91,27 @@ document.querySelector("#printButton").onclick = () => {
         contact: "anku13@gmail.com",
         contactType: "mailto:"
       }
+    },
+    {
+      company: "SolarWinds",
+      position: "UI Intern",
+      responsibilities: [],
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "AngularJS",
+        "Angular 2",
+        "Sass",
+        "ExpressJS",
+        "Grunt",
+        "Webpack",
+        "Unit Testing"
+      ],
+      startDate: "June 2016",
+      endDate: "August 2016"
     },
     {
       company: "Educational Design Studios",
