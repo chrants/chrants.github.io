@@ -38,7 +38,7 @@ document.querySelector("#printButton").onclick = () => {
       position: "Software Developer",
       responsibilities: [
         "Founded and led a project to automate the company's internal cloud billing processes, reducing management costs by €1000s per month and improving reliability of billing processes.",
-        "Utilized natural language chat bot solutions (DialogFlow) on internal sales data to help developers and designers request relevant projects using technologies of their interests.",
+        "Utilized natural language chat bot solutions (DialogFlow) on internal sales data to help developers and designers request relevant projects using technologies of their interests."
       ],
       technologies: [
         "Python",
@@ -66,9 +66,7 @@ document.querySelector("#printButton").onclick = () => {
     {
       company: "SolarWinds",
       position: "UI Intern",
-      responsibilities: [
-        "Implemented an internal Angular UI/UX documentation site for developers across the Solarwinds web portfolio."
-      ],
+      responsibilities: [],
       technologies: [
         "HTML",
         "CSS",
@@ -90,7 +88,7 @@ document.querySelector("#printButton").onclick = () => {
       company: "Pearson",
       position: "Full-Stack Intern",
       responsibilities: [
-        "Deployed a web MongoDB data visualization tool for over 1000 employees, replacing an expensive software-as-a-service OracleSQL tool, while improving the efficiency of the development-testing lifecycle."
+        "Developed a data visualization tool for over 1000 employees, replacing an expensive OracleSQL tool, while improving the efficiency of the development-testing lifecycle."
       ],
       technologies: [
         "HTML",

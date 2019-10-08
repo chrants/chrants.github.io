@@ -31,12 +31,10 @@
         </h1>
         <div id="headline" class="row">
           <div id="intro" class="lead col text-justify">
-            <p>
-              <strong>Software Developer</strong> pursuing full-time positions in <strong>Full-Stack</strong> and Systems
-              Development.<br> 
-              I hunger to deliver impact to your next million users. <br> 
-              In return, I offer 3½ years of working expertise in Full-Stack Web Development.
-            </p> 
+            <strong>Software Developer</strong> pursuing full-time positions in <strong>Full-Stack</strong> and Systems
+            Development.<br> 
+            I hunger to deliver impact to your next million users. <br> 
+            In return, I offer 3½ years of working expertise in Full-Stack Web Development.
           </div>
           <address class="lead col col-12 col-lg-auto">
             <a href="mailto:tschoepe.christian@gmail.com">tschoepe.christian@gmail.com</a> <br>
@@ -77,8 +75,8 @@
             <md-list-item ng-repeat="job in jobs" ng-class="{ 'hidden-print': job.hiddenPrint }">
               <md-list-item-text>
                 <span class="row">
-                  <h5 class="col">{{job.company}} <br><small class="text-muted">{{job.position}}</small><span class="hidden-md-up"><br><small class="text-muted">{{job.startDate}} - {{job.endDate}}</small></span></h5>
-                  <h5 class="col col-sm-auto hidden-sm-down">{{job.startDate}} - {{job.endDate}}</h5>
+                  <h5 class="col resume-item-title">{{job.company}} <br><small class="text-muted">{{job.position}}</small><span class="hidden-md-up"><br><small class="text-muted">{{job.startDate}} - {{job.endDate}}</small></span></h5>
+                  <h5 class="col col-sm-auto hidden-sm-down resume-item-title">{{job.startDate}} - {{job.endDate}}</h5>
                 </span>
                 <p ng-if="job.description" class="lead mb-0">{{job.description}}</p>
                 <ul class="list-unstyled resume-item-main">
@@ -93,13 +91,11 @@
           </md-list>
         </resume-section>
 
-        <div class="page-break"></div>
-        
         <resume-section section-title="Skills" class="hidden-lg-up">
           <md-list ng-controller="SkillsCtrl">
             <md-list-item ng-repeat="skillset in skillsets" ng-class="{ 'hidden-print': skillset.hiddenPrint }">
               <md-list-item-text>
-                <h5>{{skillset.title}}</h5>
+                <h5 class="resume-item-title">{{skillset.title}}</h5>
                 <resume-chips source="skillset.skills"></resume-chips>
               </md-list-item-text>
               <md-divider ng-if="!$last"></md-divider>
@@ -111,7 +107,7 @@
           <md-list ng-controller="ProjectsCtrl">
             <md-list-item ng-repeat="project in projects" ng-class="{ 'hidden-print': project.hiddenPrint }">
               <md-list-item-text>
-                <h5 ng-if="project.title">{{project.title}}</h5>
+                <h5 ng-if="project.title" class="resume-item-title">{{project.title}}</h5>
                 <div class="resume-item-main">
                   <p class="resume-item-main-content" ng-bind-html="project.description"></p>
                 </div>
@@ -120,7 +116,7 @@
               <md-divider ng-if="!$last"></md-divider>
             </md-list-item>
             <md-divider></md-divider>
-            <md-list-item>
+            <md-list-item class="hidden-print">
               <md-list-item-text>
                 <strong>Note: For more projects</strong>, please check my <a href="https://www.github.com/chrants">GitHub</a> or contact me at a contact listed above. Many of my projects are not hosted publicly but are available at request as I may grow them into something bigger one day.
               </md-list-item-text>
@@ -128,7 +124,7 @@
           </md-list>
         </resume-section>
         
-        <resume-section section-title="References">
+        <resume-section section-title="References" class="hidden-print">
           <md-list ng-controller="ReferencesCtrl" class="d-flex flex-lg-row flex-column justify-content-between">
             <md-list-item ng-repeat="job in jobs" ng-if="job.reference" ng-class="{ 'hidden-print': job.hiddenPrint || job.reference.hiddenPrint }">
               <md-list-item-text>
