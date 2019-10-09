@@ -218,10 +218,9 @@ document.querySelector("#printButton").onclick = () => {
         "Angular 2+",
         "React",
         "Redux",
-        "RxJS",
         "TypeScript",
+        "RxJS",
         "CoffeeScript",
-        "Dart",
         "jQuery",
         "Unit Testing"
       ]
@@ -232,11 +231,12 @@ document.querySelector("#printButton").onclick = () => {
       skills: [
         "ExpressJS",
         "Ruby on Rails",
+        "Python Flask",
         "MongoDB",
+        "REST-ful APIs",
         "GraphQL",
-        "OracleSQL",
+        "PostgreSQL",
         "Docker",
-        "Build Tools",
         "CI Tools",
         "Concurrency",
         "Unit Testing"
