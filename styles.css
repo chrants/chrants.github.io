@@ -66,8 +66,12 @@ resume-section md-card-title, #skills-top md-card-title {
   order: 3;
 }
 
-#content .container resume-section[section-title="References"] {
+#content .container resume-section[section-title="Education"] {
   order: 4;
+}
+
+#content .container resume-section[section-title="References"] {
+  order: 5;
 }
 
 #content address {

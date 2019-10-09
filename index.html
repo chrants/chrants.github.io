@@ -102,8 +102,22 @@
             </md-list-item>
           </md-list>
         </resume-section>
-                
-        <resume-section section-title="Selected Projects">
+
+        <resume-section section-title="Education">
+          <md-list>
+            <md-list-item>
+              <md-list-item-text>
+                <h5 class="resume-item-title">University of Texas at Austin</h5>
+                <div class="resume-item-main">
+                  <p class="resume-item-main-content">Computer Science (2014-2017)<br> GPA 3.95</p>
+                </div>
+              </md-list-item-text>
+              <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+          </md-list>
+        </resume-section>
+        
+        <resume-section section-title="Selected Projects" class="hidden-print">
           <md-list ng-controller="ProjectsCtrl">
             <md-list-item ng-repeat="project in projects" ng-class="{ 'hidden-print': project.hiddenPrint }">
               <md-list-item-text>
