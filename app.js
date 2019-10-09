@@ -8,8 +8,8 @@ document.querySelector("#printButton").onclick = () => {
       company: "Smartly.io",
       position: "Full-Stack Developer",
       responsibilities: [
-        "Developed the text engine in our web-based video editor and renderer, which is used to produce millions of video ads for Fortune 500 customers.",
-        "Implemented our video and image management system integrated across our product (Rails, TypeScript), allowing customers to quickly upload, preview, and reuse assets in ads and our image and video editors.",
+        "Developed the text engine for the company's web-based video editor and renderer, which has produced millions of video ads for Fortune 500 customers.",
+        "Implemented the video and image management system (Rails, TypeScript) integrated across the company's core offerings, enhancing customers' experience in creating ad campaigns (100% of company revenue).",
         "Owned the company UI component library (React, TypeScript) in close collaboration with product designers.",
         "Interviewed engineering candidates on a survey of front-end, back-end and general technical software skills."
       ],
