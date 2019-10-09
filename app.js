@@ -6,9 +6,9 @@ document.querySelector("#printButton").onclick = () => {
   const jobs = [
     {
       company: "Smartly.io",
-      position: "Full-stack Developer",
+      position: "Full-Stack Developer",
       responsibilities: [
-        "Developed the text engine in our web-based video editor and renderer, which is used to produce millions of video ads from Fortune 500 customers.",
+        "Developed the text engine in our web-based video editor and renderer, which is used to produce millions of video ads for Fortune 500 customers.",
         "Implemented our video and image management system integrated across our product (Rails, TypeScript), allowing customers to quickly upload, preview, and reuse assets in ads and our image and video editors.",
         "Owned the company UI component library (React, TypeScript) in close collaboration with product designers.",
         "Interviewed engineering candidates on a survey of front-end, back-end and general technical software skills."
