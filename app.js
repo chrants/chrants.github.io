@@ -196,15 +196,13 @@ document.querySelector("#printButton").onclick = () => {
       skills: [
         "JavaScript",
         "TypeScript",
-        "Java",
-        "Python",
         "Ruby",
+        "Python",
+        "Java",
+        "C#",
         "PHP",
-        "CoffeeScript",
-        "Dart",
         "C",
-        "Rust",
-        "Perl"
+        "Rust"
       ]
     },
     {
@@ -214,11 +212,11 @@ document.querySelector("#printButton").onclick = () => {
         "HTML",
         "CSS/SCSS",
         "JavaScript",
-        "AngularJS",
-        "Angular 2+",
+        "TypeScript",
         "React",
         "Redux",
-        "TypeScript",
+        "AngularJS",
+        "Angular 2+",
         "RxJS",
         "CoffeeScript",
         "jQuery",
