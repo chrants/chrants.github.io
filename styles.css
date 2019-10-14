@@ -36,6 +36,10 @@ resume-section md-list md-list-item .resume-item-main .resume-item-main-content 
   line-height: 1.4;
 }
 
+md-list-item:before, md-list-item {
+  min-height: 0 !important; 
+}
+
 resume-chips ul {
   margin-bottom: 0px;
 }

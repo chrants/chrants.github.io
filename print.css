@@ -84,6 +84,10 @@ resume-section md-list md-list-item .resume-item-main .resume-item-main-content 
   margin-bottom: 6px;
   line-height: 1.4;
 }
+resume-section md-list md-list-item .resume-item-main .resume-item-main-content:last-of-type {
+  margin-bottom: 2px;
+}
+
 
 md-divider {
   display: none;

@@ -50,7 +50,6 @@ document.querySelector("#printButton").onclick = () => {
         "Redux",
         "Angular 2",
         "Express",
-        "Unit Testing",
         "AWS S3",
         "AWS Lambda"
       ],
@@ -75,13 +74,11 @@ document.querySelector("#printButton").onclick = () => {
         "JavaScript",
         "Node.js",
         "MongoDB",
-        "OracleSQL",
         "SQLite",
         "AngularJS",
         "ExpressJS",
         "Bootstrap",
-        "Perl",
-        "Unit Testing"
+        "Perl"
       ],
       startDate: "May 2015",
       endDate: "August 2015",
@@ -107,8 +104,7 @@ document.querySelector("#printButton").onclick = () => {
         "Sass",
         "ExpressJS",
         "Grunt",
-        "Webpack",
-        "Unit Testing"
+        "Webpack"
       ],
       startDate: "June 2016",
       endDate: "August 2016"
@@ -123,8 +119,7 @@ document.querySelector("#printButton").onclick = () => {
         "JavaScript",
         "Ruby",
         "Ruby on Rails",
-        "Bootstrap",
-        "Unit Testing"
+        "Bootstrap"
       ],
       startDate: "June 2013",
       endDate: "June 2014"
