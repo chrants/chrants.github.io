@@ -64,7 +64,7 @@ document.querySelector("#printButton").onclick = () => {
       }
     },
     {
-      company: "Pearson",
+      company: "Pearson Education",
       position: "Full-Stack Intern",
       responsibilities: [
         "Developed a data visualization tool for over 1000 employees, replacing an expensive OracleSQL tool, while improving the efficiency of the development-testing lifecycle."
@@ -210,15 +210,14 @@ document.querySelector("#printButton").onclick = () => {
       title: "Web Front-End",
       skills: [
         "HTML",
-        "CSS/SCSS",
+        "CSS / Sass",
         "JavaScript",
         "TypeScript",
         "React",
         "Redux",
         "AngularJS",
         "Angular 2+",
-        "RxJS",
-        "CoffeeScript",
+        "RxJS (Exposure)",
         "jQuery",
         "Unit Testing"
       ]
@@ -244,10 +243,10 @@ document.querySelector("#printButton").onclick = () => {
       short: "Low-Level",
       title: "Low-Level",
       skills: [
-        "Android SDK",
         "C",
         "C++",
         "Rust",
+        "Android SDK",
         "Kernel Development",
         "File Systems",
         "System Calls",
