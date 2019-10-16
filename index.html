@@ -30,11 +30,15 @@
           <a href="/pdfs/Christian_Tschoepe_Resume.pdf" target="_blank" class="hidden-print" title="PDF"><md-icon md-svg-src="/img/ic_picture_as_pdf_24px.svg"> pdf </md-icon></a>
         </h1>
         <div id="headline" class="row">
-          <div id="intro" class="lead col text-justify hidden-print">
-            <strong>Software Developer</strong> pursuing full-time positions in <strong>Full-Stack</strong> and Systems
+          <div id="intro" class="lead col text-justify">
+            <div class="hidden-print"><strong>Software Developer</strong> pursuing full-time positions in <strong>Full-Stack</strong> and Systems
             Development.<br> 
             I hunger to deliver impact to your next million users. <br> 
-            In return, I offer 3½ years of working expertise in Full-Stack Web Development.
+            In return, I offer 3½ years of working expertise in Full-Stack Web Development. <br>
+            <br>
+          </div>
+            I am a <strong>Software Developer</strong> deeply interested in Operating Systems. <br>
+            I have a strong background in Web Development professionally, looking for the right transition into Systems.
           </div>
           <address class="lead col col-12 col-lg-auto">
             <a href="mailto:tschoepe.christian@gmail.com">tschoepe.christian@gmail.com</a> <br>
@@ -84,14 +88,35 @@
                     <span ng-bind-html="responsibility"></span>
                   </li>
                 </ul>
-                <resume-chips source="job.technologies"></resume-chips>
+                <resume-chips ng-if="job.technologies" source="job.technologies"></resume-chips>
               </md-list-item-text>
               <md-divider ng-if="!$last"></md-divider>
             </md-list-item>
           </md-list>
         </resume-section>
 
-        <resume-section section-title="Skills" class="hidden-lg-up">
+        <resume-section section-title="Selected Projects">
+          <md-list ng-controller="ProjectsCtrl">
+            <md-list-item ng-repeat="project in projects" ng-class="{ 'hidden-print': project.hiddenPrint }">
+              <md-list-item-text>
+                <h5 ng-if="project.title" class="resume-item-title">{{project.title}}</h5>
+                <div class="resume-item-main">
+                  <p class="resume-item-main-content" ng-bind-html="project.description"></p>
+                </div>
+                <resume-chips source="project.technologies"></resume-chips>
+              </md-list-item-text>
+              <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+            <md-divider></md-divider>
+            <md-list-item class="hidden-print">
+              <md-list-item-text>
+                <strong>Note: For more projects</strong>, please check my <a href="https://www.github.com/chrants">GitHub</a> or contact me at a contact listed above. Many of my projects are not hosted publicly but are available at request as I may grow them into something bigger one day.
+              </md-list-item-text>
+            </md-list-item>
+          </md-list>
+        </resume-section>
+
+        <resume-section section-title="Selected Skills" class="hidden-lg-up">
           <md-list ng-controller="SkillsCtrl">
             <md-list-item ng-repeat="skillset in skillsets" ng-class="{ 'hidden-print': skillset.hiddenPrint }">
               <md-list-item-text>
@@ -113,27 +138,6 @@
                 </div>
               </md-list-item-text>
               <md-divider ng-if="!$last"></md-divider>
-            </md-list-item>
-          </md-list>
-        </resume-section>
-        
-        <resume-section section-title="Selected Projects" class="hidden-print">
-          <md-list ng-controller="ProjectsCtrl">
-            <md-list-item ng-repeat="project in projects" ng-class="{ 'hidden-print': project.hiddenPrint }">
-              <md-list-item-text>
-                <h5 ng-if="project.title" class="resume-item-title">{{project.title}}</h5>
-                <div class="resume-item-main">
-                  <p class="resume-item-main-content" ng-bind-html="project.description"></p>
-                </div>
-                <resume-chips source="project.technologies"></resume-chips>
-              </md-list-item-text>
-              <md-divider ng-if="!$last"></md-divider>
-            </md-list-item>
-            <md-divider></md-divider>
-            <md-list-item class="hidden-print">
-              <md-list-item-text>
-                <strong>Note: For more projects</strong>, please check my <a href="https://www.github.com/chrants">GitHub</a> or contact me at a contact listed above. Many of my projects are not hosted publicly but are available at request as I may grow them into something bigger one day.
-              </md-list-item-text>
             </md-list-item>
           </md-list>
         </resume-section>

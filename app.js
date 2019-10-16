@@ -6,7 +6,7 @@ document.querySelector("#printButton").onclick = () => {
   const jobs = [
     {
       company: "Smartly.io",
-      position: "Full-Stack Developer",
+      position: "Software Developer",
       responsibilities: [
         "Developed the text engine for the company's web-based video editor and renderer, which has produced millions of video ads for Fortune 500 customers.",
         "Implemented the video and image management system (Rails, TypeScript) integrated across the company's core offerings, enhancing customers' experience in creating ad campaigns (100% of company revenue).",
@@ -63,23 +63,41 @@ document.querySelector("#printButton").onclick = () => {
       }
     },
     {
+      company: "SolarWinds",
+      position: "UI Intern",
+      responsibilities: [],
+      // technologies: [
+      //   "HTML",
+      //   "CSS",
+      //   "JavaScript",
+      //   "TypeScript",
+      //   "Node.js",
+      //   "AngularJS",
+      //   "Angular 2",
+      //   "Sass",
+      //   "ExpressJS",
+      //   "Grunt",
+      //   "Webpack"
+      // ],
+      startDate: "June 2016",
+      endDate: "August 2016"
+    },
+    {
       company: "Pearson Education",
       position: "Full-Stack Intern",
-      responsibilities: [
-        "Developed a data visualization tool for over 1000 employees, replacing an expensive OracleSQL tool, while improving the efficiency of the development-testing lifecycle."
-      ],
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Node.js",
-        "MongoDB",
-        "SQLite",
-        "AngularJS",
-        "ExpressJS",
-        "Bootstrap",
-        "Perl"
-      ],
+      responsibilities: [],
+      // technologies: [
+      //   "HTML",
+      //   "CSS",
+      //   "JavaScript",
+      //   "Node.js",
+      //   "MongoDB",
+      //   "SQLite",
+      //   "AngularJS",
+      //   "ExpressJS",
+      //   "Bootstrap",
+      //   "Perl"
+      // ],
       startDate: "May 2015",
       endDate: "August 2015",
       reference: {
@@ -90,37 +108,17 @@ document.querySelector("#printButton").onclick = () => {
       }
     },
     {
-      company: "SolarWinds",
-      position: "UI Intern",
-      responsibilities: [],
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "TypeScript",
-        "Node.js",
-        "AngularJS",
-        "Angular 2",
-        "Sass",
-        "ExpressJS",
-        "Grunt",
-        "Webpack"
-      ],
-      startDate: "June 2016",
-      endDate: "August 2016"
-    },
-    {
       company: "Educational Design Studios",
       position: "Full-Stack Intern",
       responsibilities: [],
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Ruby",
-        "Ruby on Rails",
-        "Bootstrap"
-      ],
+      // technologies: [
+      //   "HTML",
+      //   "CSS",
+      //   "JavaScript",
+      //   "Ruby",
+      //   "Ruby on Rails",
+      //   "Bootstrap"
+      // ],
       startDate: "June 2013",
       endDate: "June 2014"
     },
@@ -128,14 +126,14 @@ document.querySelector("#printButton").onclick = () => {
       company: "Rackspace Hosting",
       position: "Full-Stack Intern",
       responsibilities: [],
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Ruby",
-        "Sinatra",
-        "Bootstrap"
-      ],
+      // technologies: [
+      //   "HTML",
+      //   "CSS",
+      //   "JavaScript",
+      //   "Ruby",
+      //   "Sinatra",
+      //   "Bootstrap"
+      // ],
       startDate: "June 2013",
       endDate: "August 2013"
     }
@@ -146,12 +144,13 @@ document.querySelector("#printButton").onclick = () => {
       title: "MoFi",
       description:
         "Movie Recommendations. Hackathon project that helps groups decide on a movie to watch based on the moods of the group. I was in charge of the Back-End.",
-      technologies: ["Koa", "Mongoose", "MongoDB", "React"]
+      technologies: ["Koa", "Mongoose", "MongoDB", "React"],
+      hiddenPrint: true
     },
     {
       title: "NinjaPup OS",
       description:
-        "Basic Operating System written with Rust nightly with paged x86 64-bit memory management.",
+        "Basic kernel-only Operating System written with Rust nightly with paged x86 64-bit memory management.",
       technologies: ["Rust", "Kernel Development"]
     },
     {
@@ -167,7 +166,8 @@ document.querySelector("#printButton").onclick = () => {
         "ExpressJS",
         "Bootstrap",
         "SQLite"
-      ]
+      ],
+      hiddenPrint: true
     },
     {
       title: "PintOS",
@@ -179,8 +179,7 @@ document.querySelector("#printButton").onclick = () => {
         "File Systems",
         "Process Scheduling",
         "Concurrency"
-      ],
-      hiddenPrint: true
+      ]
     }
   ];
 
@@ -189,49 +188,32 @@ document.querySelector("#printButton").onclick = () => {
       short: "Languages",
       title: "Programming Languages",
       skills: [
-        "JavaScript",
-        "TypeScript",
-        "Ruby",
-        "Python",
         "Java",
         "C#",
         "PHP",
         "C",
-        "Rust"
-      ]
-    },
-    {
-      short: "Front-End",
-      title: "Web Front-End",
-      skills: [
-        "HTML",
-        "CSS / Sass",
+        "C++",
+        "Rust",
+        "Python",
         "JavaScript",
         "TypeScript",
-        "React",
-        "Redux",
-        "AngularJS",
-        "Angular 2+",
-        "RxJS (Exposure)",
-        "jQuery",
-        "Unit Testing"
+        "Ruby"
       ]
     },
     {
       short: "Back-End",
       title: "Web Back-End",
       skills: [
-        "ExpressJS",
-        "Ruby on Rails",
-        "Python Flask",
-        "MongoDB",
         "REST-ful APIs",
         "GraphQL",
         "PostgreSQL",
+        "MongoDB",
         "Docker",
-        "CI Tools",
-        "Concurrency",
-        "Unit Testing"
+        // "Ruby on Rails",
+        "ExpressJS",
+        "Flask",
+        // "CI Tools",
+        "Concurrency"
       ]
     },
     {
@@ -241,13 +223,11 @@ document.querySelector("#printButton").onclick = () => {
         "C",
         "C++",
         "Rust",
-        "Android SDK",
         "Kernel Development",
         "File Systems",
         "System Calls",
         "Concurrency"
-      ],
-      hiddenPrint: true
+      ]
     }
   ];
 
