@@ -197,6 +197,7 @@ document.querySelector("#printButton").onclick = () => {
         "C#",
         "PHP",
         "C",
+        "C++",
         "Rust"
       ]
     },
