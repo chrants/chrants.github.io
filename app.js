@@ -119,7 +119,6 @@ document.querySelector("#printButton").onclick = () => {
         "JavaScript",
         "Ruby",
         "Ruby on Rails",
-        "Bootstrap"
       ],
       startDate: "June 2013",
       endDate: "June 2014"
@@ -134,7 +133,6 @@ document.querySelector("#printButton").onclick = () => {
         "JavaScript",
         "Ruby",
         "Sinatra",
-        "Bootstrap"
       ],
       startDate: "June 2013",
       endDate: "August 2013"
@@ -165,7 +163,6 @@ document.querySelector("#printButton").onclick = () => {
         "AngularJS",
         "Node.js",
         "ExpressJS",
-        "Bootstrap",
         "SQLite"
       ]
     },
@@ -242,7 +239,6 @@ document.querySelector("#printButton").onclick = () => {
         "C",
         "C++",
         "Rust",
-        "Android SDK",
         "Kernel Development",
         "File Systems",
         "System Calls",
