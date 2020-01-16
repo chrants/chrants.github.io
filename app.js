@@ -11,7 +11,7 @@ document.querySelector("#printButton").onclick = () => {
         "Developed the text engine for the company's web-based video editor and renderer, which has produced millions of video ads for Fortune 500 customers.",
         "Implemented the video and image management system (Rails, TypeScript) integrated across the company's core offerings, enhancing customers' experience in creating ad campaigns (100% of company revenue).",
         "Owned the company UI component library (React, TypeScript) in close collaboration with product designers.",
-        "Interviewed engineering candidates on a survey of front-end, back-end and general technical software skills."
+        // "Interviewed engineering candidates on a survey of front-end, back-end and general technical software skills."
       ],
       technologies: [
         "TypeScript",
@@ -244,7 +244,7 @@ document.querySelector("#printButton").onclick = () => {
         "System Calls",
         "Concurrency"
       ],
-      hiddenPrint: true
+      // hiddenPrint: true
     }
   ];
 
