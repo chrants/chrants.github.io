@@ -8,7 +8,7 @@ document.querySelector("#printButton").onclick = () => {
       company: "Atlassian • Contract",
       position: "Full-Stack Developer",
       responsibilities: [
-        "Launched retiring old content on Atlassian support docs (<a href='support.atlassian.com'>support.atlassian.com</a>).",
+        "Launched retiring old content on Atlassian support docs (<a href='https://support.atlassian.com'>support.atlassian.com</a>).",
         "Led project efforts on TypeScript conversion and helped lead CI / CD pipeline improvements."
       ],
       technologies: [
