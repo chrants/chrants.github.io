@@ -5,6 +5,31 @@ document.querySelector("#printButton").onclick = () => {
 (() => {
   const jobs = [
     {
+      company: "Atlassian • Contract",
+      position: "Full-Stack Developer",
+      responsibilities: [
+        "Launched retiring old content on Atlassian support docs (<a href='support.atlassian.com'>support.atlassian.com</a>).",
+        "Led project efforts on TypeScript conversion and helped lead CI / CD pipeline improvements."
+      ],
+      technologies: [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Express",
+        "GraphQL",
+        "Docker",
+        "Contentful CMS"
+      ],
+      startDate: "February 2020",
+      endDate: "Present"
+      // reference: {
+      //   name: "",
+      //   position: "Engineering Team Lead",
+      //   contact: "",
+      //   contactType: "tel:"
+      // }
+    },
+    {
       company: "Smartly.io",
       position: "Full-Stack Developer",
       responsibilities: [
@@ -25,7 +50,7 @@ document.querySelector("#printButton").onclick = () => {
         "Docker"
       ],
       startDate: "September 2018",
-      endDate: "Present"
+      endDate: "November 2019"
       // reference: {
       //   name: "",
       //   position: "Engineering Team Lead",
@@ -64,21 +89,21 @@ document.querySelector("#printButton").onclick = () => {
     },
     {
       company: "Pearson Education",
-      position: "Full-Stack Intern",
+      position: "Full-Stack Intern (AngularJS, Express)",
       responsibilities: [
         "Developed a data visualization tool for over 1000 employees, replacing an expensive OracleSQL tool, while improving the efficiency of the development-testing lifecycle."
       ],
       technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Node.js",
-        "MongoDB",
-        "SQLite",
-        "AngularJS",
-        "ExpressJS",
-        "Bootstrap",
-        "Perl"
+        // "HTML",
+        // "CSS",
+        // "JavaScript",
+        // "Node.js",
+        // "MongoDB",
+        // "SQLite",
+        // "AngularJS",
+        // "ExpressJS",
+        // "Bootstrap",
+        // "Perl"
       ],
       startDate: "May 2015",
       endDate: "August 2015",
@@ -91,48 +116,48 @@ document.querySelector("#printButton").onclick = () => {
     },
     {
       company: "SolarWinds",
-      position: "UI Intern",
+      position: "UI Intern (Angular)",
       responsibilities: [],
       technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "TypeScript",
-        "Node.js",
-        "AngularJS",
-        "Angular 2",
-        "Sass",
-        "ExpressJS",
-        "Grunt",
-        "Webpack"
+        // "HTML",
+        // "CSS",
+        // "JavaScript",
+        // "TypeScript",
+        // "Node.js",
+        // "AngularJS",
+        // "Angular 2",
+        // "Sass",
+        // "ExpressJS",
+        // "Grunt",
+        // "Webpack"
       ],
       startDate: "June 2016",
       endDate: "August 2016"
     },
     {
       company: "Educational Design Studios",
-      position: "Full-Stack Intern",
+      position: "Full-Stack Intern (Ruby)",
       responsibilities: [],
       technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Ruby",
-        "Ruby on Rails",
+        // "HTML",
+        // "CSS",
+        // "JavaScript",
+        // "Ruby",
+        // "Ruby on Rails",
       ],
       startDate: "June 2013",
       endDate: "June 2014"
     },
     {
       company: "Rackspace Hosting",
-      position: "Full-Stack Intern",
+      position: "Full-Stack Intern (Ruby)",
       responsibilities: [],
       technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Ruby",
-        "Sinatra",
+        // "HTML",
+        // "CSS",
+        // "JavaScript",
+        // "Ruby",
+        // "Sinatra",
       ],
       startDate: "June 2013",
       endDate: "August 2013"
