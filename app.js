@@ -80,12 +80,12 @@ document.querySelector("#printButton").onclick = () => {
       ],
       startDate: "February 2018",
       endDate: "September 2018",
-      reference: {
-        name: "Juho Salmi",
-        position: "Product Owner",
-        contact: "+358405377012",
-        contactType: "tel:"
-      }
+      // reference: {
+      //   name: "Juho Salmi",
+      //   position: "Product Owner",
+      //   contact: "+358405377012",
+      //   contactType: "tel:"
+      // }
     },
     {
       company: "Pearson Education",
@@ -107,12 +107,12 @@ document.querySelector("#printButton").onclick = () => {
       ],
       startDate: "May 2015",
       endDate: "August 2015",
-      reference: {
-        name: "Ankur Kapadia",
-        position: "Manager",
-        contact: "anku13@gmail.com",
-        contactType: "mailto:"
-      }
+      // reference: {
+      //   name: "Ankur Kapadia",
+      //   position: "Manager",
+      //   contact: "anku13@gmail.com",
+      //   contactType: "mailto:"
+      // }
     },
     {
       company: "SolarWinds",
