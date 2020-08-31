@@ -26,6 +26,12 @@ resume-section md-list md-list-item md-list-item-text {
   width: 100%;
 }
 
+
+resume-section md-list md-list-item .resume-item-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
 resume-section md-list md-list-item .resume-item-main {
   margin-bottom: 0;
   text-align: justify;
@@ -38,6 +44,10 @@ resume-section md-list md-list-item .resume-item-main .resume-item-main-content 
 
 md-list-item:before, md-list-item {
   min-height: 0 !important; 
+}
+
+resume-chips {
+  margin-top: 4px;
 }
 
 resume-chips ul {
@@ -62,20 +72,24 @@ resume-section md-card-title, #skills-top md-card-title {
   order: 1;
 }
 
-#content .container resume-section[section-title="Selected Projects"] {
+#content .container resume-section[section-title="Previous Experience"] {
   order: 2;
 }
 
-#content .container resume-section[section-title="Skills"] {
+#content .container resume-section[section-title="Selected Projects"] {
   order: 3;
 }
 
-#content .container resume-section[section-title="Education"] {
+#content .container resume-section[section-title="Skills"] {
   order: 4;
 }
 
-#content .container resume-section[section-title="References"] {
+#content .container resume-section[section-title="Education"] {
   order: 5;
+}
+
+#content .container resume-section[section-title="References"] {
+  order: 6;
 }
 
 #content address {

@@ -5,38 +5,13 @@ document.querySelector("#printButton").onclick = () => {
 (() => {
   const jobs = [
     {
-      company: "Atlassian • Contract",
-      position: "Full-Stack Developer",
-      responsibilities: [
-        "Launched retiring old content on Atlassian support docs (<a href='https://support.atlassian.com'>support.atlassian.com</a>).",
-        "Led project efforts on TypeScript conversion and helped lead CI / CD pipeline improvements."
-      ],
-      technologies: [
-        "TypeScript",
-        "JavaScript",
-        "React",
-        "Express",
-        "GraphQL",
-        "Docker",
-        "Contentful CMS"
-      ],
-      startDate: "February 2020",
-      endDate: "Present"
-      // reference: {
-      //   name: "",
-      //   position: "Engineering Team Lead",
-      //   contact: "",
-      //   contactType: "tel:"
-      // }
-    },
-    {
       company: "Smartly.io",
       position: "Full-Stack Developer",
       responsibilities: [
         "Developed the text engine for the company's web-based video editor and renderer, which has produced millions of video ads for Fortune 500 customers.",
         "Implemented the video and image management system (Rails, TypeScript) integrated across the company's core offerings, enhancing customers' experience in creating ad campaigns (100% of company revenue).",
         "Owned the company UI component library (React, TypeScript) in close collaboration with product designers.",
-        "Interviewed engineering candidates on a survey of front-end, back-end and general technical software skills."
+        // "Interviewed engineering candidates on a survey of front-end, back-end and general technical software skills."
       ],
       technologies: [
         "TypeScript",
@@ -59,24 +34,47 @@ document.querySelector("#printButton").onclick = () => {
       // }
     },
     {
+      company: "Atlassian",
+      position: "Full-Stack Developer (Contract)",
+      responsibilities: [
+        "Launched Retiring Old Content on Atlassian support docs (<a href='https://support.atlassian.com'>support.atlassian.com</a>).",
+        "Led project efforts on TypeScript conversion and helped lead CI / CD pipeline improvements."
+      ],
+      technologies: [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Express",
+        "GraphQL",
+        "Docker",
+        "Contentful CMS"
+      ],
+      startDate: "February 2020",
+      endDate: "Present"
+      // reference: {
+      //   name: "",
+      //   position: "Engineering Team Lead",
+      //   contact: "",
+      //   contactType: "tel:"
+      // }
+    },
+    {
       company: "Gofore",
       position: "Software Developer",
       responsibilities: [
-        "Founded and led a project to automate the company's internal cloud billing processes, reducing management costs by €1000s per month and improving reliability of billing processes.",
-        "Utilized natural language chat bot solutions (DialogFlow) on internal sales data to help developers and designers request relevant projects using technologies of their interests."
+        "Founded and led a project to automate cloud billing processes, improving reliability and costs €1000s monthly.",
+        "Used natural language chat bot solutions on project sales data to help consultants find relevant projects of their interests."
       ],
       technologies: [
         "Python",
         "Flask",
-        "JavaScript",
         "TypeScript",
-        "Node.js",
         "React",
         "Redux",
         "Angular 2",
-        "Express",
-        "AWS S3",
-        "AWS Lambda"
+        "S3", 
+        "Lambda",
+        "DialogFlow"
       ],
       startDate: "February 2018",
       endDate: "September 2018",
@@ -86,12 +84,36 @@ document.querySelector("#printButton").onclick = () => {
       //   contact: "+358405377012",
       //   contactType: "tel:"
       // }
+    }
+  ];
+  const previousJobs = [
+    {
+      company: "SolarWinds",
+      position: "UI Intern",
+      responsibilities: [
+        // "Implemented an internal Angular best practices website to document UI components across the Solarwinds web portfolio."
+      ],
+      technologies: [
+        // "HTML",
+        // "CSS",
+        // "JavaScript",
+        // "TypeScript",
+        // "Node.js",
+        // "AngularJS",
+        // "Angular 2",
+        // "Sass",
+        // "ExpressJS",
+        // "Grunt",
+        // "Webpack"
+      ],
+      startDate: "June 2016",
+      endDate: "August 2016"
     },
     {
       company: "Pearson Education",
-      position: "Full-Stack Intern (AngularJS, Express)",
+      position: "Full-Stack Intern",
       responsibilities: [
-        "Developed a data visualization tool for over 1000 employees, replacing an expensive OracleSQL tool, while improving the efficiency of the development-testing lifecycle."
+        // "Developed a school testing data visualization tool for over 1000 employees with MongoDB, Express and AngularJS."
       ],
       technologies: [
         // "HTML",
@@ -115,29 +137,11 @@ document.querySelector("#printButton").onclick = () => {
       // }
     },
     {
-      company: "SolarWinds",
-      position: "UI Intern (Angular)",
-      responsibilities: [],
-      technologies: [
-        // "HTML",
-        // "CSS",
-        // "JavaScript",
-        // "TypeScript",
-        // "Node.js",
-        // "AngularJS",
-        // "Angular 2",
-        // "Sass",
-        // "ExpressJS",
-        // "Grunt",
-        // "Webpack"
-      ],
-      startDate: "June 2016",
-      endDate: "August 2016"
-    },
-    {
       company: "Educational Design Studios",
-      position: "Full-Stack Intern (Ruby)",
-      responsibilities: [],
+      position: "Full-Stack Intern",
+      responsibilities: [
+        // "Designed and implemented a website (Rails), providing teachers with an easy way to exchange educational resources."
+      ],
       technologies: [
         // "HTML",
         // "CSS",
@@ -150,8 +154,10 @@ document.querySelector("#printButton").onclick = () => {
     },
     {
       company: "Rackspace Hosting",
-      position: "Full-Stack Intern (Ruby)",
-      responsibilities: [],
+      position: "Full-Stack Intern",
+      responsibilities: [
+        // "Developed a Ruby application streamlining the application process for intern candidates and intern-seeking employees."
+      ],
       technologies: [
         // "HTML",
         // "CSS",
@@ -168,7 +174,7 @@ document.querySelector("#printButton").onclick = () => {
     {
       title: "MoFi",
       description:
-        "Movie Recommendations. Hackathon project that helps groups decide on a movie to watch based on the moods of the group. I was in charge of the Back-End.",
+        "Hackathon project that helps groups decide on a movie to watch Tinder-style. I was in charge of the Back-End.",
       technologies: ["Koa", "Mongoose", "MongoDB", "React"]
     },
     {
@@ -189,7 +195,8 @@ document.querySelector("#printButton").onclick = () => {
         "Node.js",
         "ExpressJS",
         "SQLite"
-      ]
+      ],
+      hiddenPrint: true
     },
     {
       title: "PintOS",
@@ -227,17 +234,16 @@ document.querySelector("#printButton").onclick = () => {
       short: "Front-End",
       title: "Web Front-End",
       skills: [
-        "HTML",
-        "CSS / Sass",
-        "JavaScript",
-        "TypeScript",
         "React",
         "Redux",
+        "TypeScript",
+        "JavaScript",
         "AngularJS",
         "Angular 2+",
+        "HTML",
+        "CSS / Sass",
         "RxJS (Exposure)",
         "jQuery",
-        "Unit Testing"
       ]
     },
     {
@@ -248,13 +254,11 @@ document.querySelector("#printButton").onclick = () => {
         "Ruby on Rails",
         "Python Flask",
         "MongoDB",
+        "PostgreSQL",
         "REST-ful APIs",
         "GraphQL",
-        "PostgreSQL",
         "Docker",
-        "CI Tools",
-        "Concurrency",
-        "Unit Testing"
+        "Concurrency"
       ]
     },
     {
@@ -277,6 +281,7 @@ document.querySelector("#printButton").onclick = () => {
     .module("ResumeApp", ["ngMaterial", "ngSanitize"])
     .controller("ExperienceCtrl", function($scope) {
       $scope.jobs = jobs;
+      $scope.previousJobs = previousJobs;
     })
     .controller("ProjectsCtrl", function($scope) {
       $scope.projects = projects;

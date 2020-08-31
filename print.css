@@ -55,7 +55,7 @@ resume-section md-list md-list-item :not(.resume-item-title) {
 
 resume-section md-list md-list-item .resume-item-title {
   font-size: 0.8rem;
-  margin-bottom: 3px;
+  margin-bottom: 0;
 }
 
 resume-section md-card-title {
@@ -81,11 +81,11 @@ resume-section md-list md-list-item .resume-item-main {
 }
 
 resume-section md-list md-list-item .resume-item-main .resume-item-main-content {
-  margin-bottom: 4px;
+  margin-bottom: 0;
   line-height: 1.4;
 }
 resume-section md-list md-list-item .resume-item-main .resume-item-main-content:last-of-type {
-  margin-bottom: 2px;
+  margin-bottom: 0;
 }
 
 
@@ -121,10 +121,6 @@ md-list-item:before {
 resume-section {
   display: block;
   page-break-after: auto;
-}
-
-resume-section md-list-item {
-  page-break-after: auto !important;
 }
 
 footer {
