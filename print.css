@@ -13,18 +13,18 @@ body {
 }
 
 header.jumbotron {
-  padding-top: 2rem !important;
+  padding-top: 0px !important;
   padding-bottom: 4px !important;
   margin-bottom: 4px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 header h1 {
-  margin-bottom: 4px;
+  margin-bottom: 0px;
 }
 
 header h1 #myName {
-  font-size: 1.75rem !important;
+  font-size: 1.4rem !important;
 }
 
 header .lead {
@@ -80,14 +80,21 @@ resume-section md-list md-list-item .resume-item-main {
   margin-bottom: 0;
 }
 
-resume-section md-list md-list-item .resume-item-main .resume-item-main-content {
+resume-section
+  md-list
+  md-list-item
+  .resume-item-main
+  .resume-item-main-content {
   margin-bottom: 0;
   line-height: 1.4;
 }
-resume-section md-list md-list-item .resume-item-main .resume-item-main-content:last-of-type {
+resume-section
+  md-list
+  md-list-item
+  .resume-item-main
+  .resume-item-main-content:last-of-type {
   margin-bottom: 0;
 }
-
 
 md-divider {
   display: none;

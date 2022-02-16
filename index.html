@@ -91,22 +91,6 @@
           </md-list>
         </resume-section>
 
-        <resume-section section-title="Previous Experience">
-          <md-list ng-controller="ExperienceCtrl">
-            <md-list-item ng-repeat="job in previousJobs" ng-class="{ 'hidden-print': job.hiddenPrint }">
-              <md-list-item-text>
-                <span class="row">
-                  <span class="col resume-item-title">{{job.company}} &nbsp;<small class="text-muted">{{job.position}}</small><span class="hidden-md-up"><br><small class="text-muted">{{job.startDate}} - {{job.endDate}}</small></span></span>
-                  <span class="col col-sm-auto hidden-sm-down resume-item-title">{{job.startDate}} - {{job.endDate}}</span>
-                </span>
-                <!-- <p ng-if="job.description" class="lead mb-0">{{job.description}}</p> -->
-                <!-- <resume-chips source="job.technologies"></resume-chips> -->
-              </md-list-item-text>
-              <!-- <md-divider ng-if="!$last"></md-divider> -->
-            </md-list-item>
-          </md-list>
-        </resume-section>
-
         <resume-section section-title="Selected Projects">
           <md-list ng-controller="ProjectsCtrl">
             <md-list-item ng-repeat="project in projects" ng-class="{ 'hidden-print': project.hiddenPrint }">
@@ -140,6 +124,7 @@
           </md-list>
         </resume-section>
 
+
         <resume-section section-title="Education">
           <md-list>
             <md-list-item>
@@ -150,6 +135,30 @@
                 </div>
               </md-list-item-text>
               <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+          </md-list>
+        </resume-section>
+
+        <div class="page-break"></div>
+
+
+        <resume-section section-title="Previous Experience">
+          <md-list ng-controller="ExperienceCtrl">
+            <md-list-item ng-repeat="job in previousJobs" ng-class="{ 'hidden-print': job.hiddenPrint }">
+              <md-list-item-text>
+                <span class="row">
+                  <span class="col resume-item-title">{{job.company}} &nbsp;<small class="text-muted">{{job.position}}</small><span class="hidden-md-up"><br><small class="text-muted">{{job.startDate}} - {{job.endDate}}</small></span></span>
+                  <span class="col col-sm-auto hidden-sm-down resume-item-title">{{job.startDate}} - {{job.endDate}}</span>
+                </span>
+                <!-- <p ng-if="job.description" class="lead mb-0">{{job.description}}</p> -->
+                <ul class="list-unstyled resume-item-main">
+                  <li class="resume-item-main-content" ng-repeat="responsibility in job.responsibilities">
+                    <span ng-bind-html="responsibility"></span>
+                  </li>
+                </ul>
+                <resume-chips source="job.technologies"></resume-chips>
+              </md-list-item-text>
+              <!-- <md-divider ng-if="!$last"></md-divider> -->
             </md-list-item>
           </md-list>
         </resume-section>
@@ -177,7 +186,7 @@
       
     <footer class="container">
       <span class="float-left">Written in HTML5<span class="hidden-xs-down"> at <a href="https://chrants.github.io/">chrants.github.io</a></span></span>
-      <span class="float-right">© Christian Tschoepe 2020</span>
+      <span class="float-right">© Christian Tschoepe 2022</span>
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->

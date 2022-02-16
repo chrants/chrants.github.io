@@ -5,6 +5,50 @@ document.querySelector("#printButton").onclick = () => {
 (() => {
   const jobs = [
     {
+      company: "Hatched Labs (ecommerce)",
+      position: "Software Engineer III",
+      responsibilities: [
+        "Planned and executed a major refactor on the product catalog across the site. I communicated closely with design and product teams to scope this major refactor into the roadmap, which opened the door to an all-new design system previously considered technically impossible.",
+        "Worked closely with data team to lay the groundworks, scope, and launch a major customer data platform migration from an old provider. I received praise from both the data lead and fellow front-end for how smoothly this major migration launched.",
+        "Planned (Almost) Pixel Perfect UI OKRs. Responsible for interfacing front-end team on large-scale design system projects.",
+        "Scoped and launched coupons catalog.",
+      ],
+      technologies: [
+        "TypeScript",
+        "React",
+        "GraphQL",
+        "Apollo",
+        "Styled Components",
+      ],
+      startDate: "November 2020",
+      endDate: "Present",
+    },
+    {
+      company: "Atlassian",
+      position: "Full-Stack Developer (Contract)",
+      responsibilities: [
+        "Launched Retiring Old Content on Atlassian support docs (<a href='https://support.atlassian.com'>support.atlassian.com</a>).",
+        "Led project efforts on TypeScript conversion and helped lead CI / CD pipeline improvements.",
+      ],
+      technologies: [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Express",
+        "GraphQL",
+        "Docker",
+        "Contentful CMS",
+      ],
+      startDate: "February 2020",
+      endDate: "August 2020",
+      // reference: {
+      //   name: "",
+      //   position: "Engineering Team Lead",
+      //   contact: "",
+      //   contactType: "tel:"
+      // }
+    },
+    {
       company: "Smartly.io",
       position: "Full-Stack Developer",
       responsibilities: [
@@ -22,35 +66,10 @@ document.querySelector("#printButton").onclick = () => {
         "Rails",
         "PHP",
         "Python",
-        "Docker"
+        "Docker",
       ],
       startDate: "September 2018",
-      endDate: "November 2019"
-      // reference: {
-      //   name: "",
-      //   position: "Engineering Team Lead",
-      //   contact: "",
-      //   contactType: "tel:"
-      // }
-    },
-    {
-      company: "Atlassian",
-      position: "Full-Stack Developer (Contract)",
-      responsibilities: [
-        "Launched Retiring Old Content on Atlassian support docs (<a href='https://support.atlassian.com'>support.atlassian.com</a>).",
-        "Led project efforts on TypeScript conversion and helped lead CI / CD pipeline improvements."
-      ],
-      technologies: [
-        "TypeScript",
-        "JavaScript",
-        "React",
-        "Express",
-        "GraphQL",
-        "Docker",
-        "Contentful CMS"
-      ],
-      startDate: "February 2020",
-      endDate: "Present"
+      endDate: "November 2019",
       // reference: {
       //   name: "",
       //   position: "Engineering Team Lead",
@@ -63,7 +82,7 @@ document.querySelector("#printButton").onclick = () => {
       position: "Software Developer",
       responsibilities: [
         "Founded and led a project to automate cloud billing processes, improving reliability and costs €1000s monthly.",
-        "Used natural language chat bot solutions on project sales data to help consultants find relevant projects of their interests."
+        "Used natural language chat bot solutions on project sales data to help consultants find relevant projects of their interests.",
       ],
       technologies: [
         "Python",
@@ -72,9 +91,9 @@ document.querySelector("#printButton").onclick = () => {
         "React",
         "Redux",
         "Angular 2",
-        "S3", 
+        "S3",
         "Lambda",
-        "DialogFlow"
+        "DialogFlow",
       ],
       startDate: "February 2018",
       endDate: "September 2018",
@@ -84,49 +103,49 @@ document.querySelector("#printButton").onclick = () => {
       //   contact: "+358405377012",
       //   contactType: "tel:"
       // }
-    }
+    },
   ];
   const previousJobs = [
     {
       company: "SolarWinds",
       position: "UI Intern",
       responsibilities: [
-        // "Implemented an internal Angular best practices website to document UI components across the Solarwinds web portfolio."
+        // "Implemented an internal Angular best practices website to document UI components across the Solarwinds web portfolio.",
       ],
-      technologies: [
-        // "HTML",
-        // "CSS",
-        // "JavaScript",
-        // "TypeScript",
-        // "Node.js",
-        // "AngularJS",
-        // "Angular 2",
-        // "Sass",
-        // "ExpressJS",
-        // "Grunt",
-        // "Webpack"
-      ],
+      // technologies: [
+      //   // "HTML",
+      //   // "CSS",
+      //   "JavaScript",
+      //   "TypeScript",
+      //   "Node.js",
+      //   "AngularJS",
+      //   "Angular 2",
+      //   // "Sass",
+      //   // "ExpressJS",
+      //   // "Grunt",
+      //   // "Webpack"
+      // ],
       startDate: "June 2016",
-      endDate: "August 2016"
+      endDate: "August 2016",
     },
     {
       company: "Pearson Education",
       position: "Full-Stack Intern",
       responsibilities: [
-        // "Developed a school testing data visualization tool for over 1000 employees with MongoDB, Express and AngularJS."
+        // "Developed a school testing data visualization tool for over 1000 employees with MongoDB, Express and AngularJS.",
       ],
-      technologies: [
-        // "HTML",
-        // "CSS",
-        // "JavaScript",
-        // "Node.js",
-        // "MongoDB",
-        // "SQLite",
-        // "AngularJS",
-        // "ExpressJS",
-        // "Bootstrap",
-        // "Perl"
-      ],
+      // technologies: [
+      //   // "HTML",
+      //   // "CSS",
+      //   "JavaScript",
+      //   "Node.js",
+      //   "MongoDB",
+      //   // "SQLite",
+      //   "AngularJS",
+      //   "ExpressJS",
+      //   // "Bootstrap",
+      //   // "Perl"
+      // ],
       startDate: "May 2015",
       endDate: "August 2015",
       // reference: {
@@ -140,34 +159,34 @@ document.querySelector("#printButton").onclick = () => {
       company: "Educational Design Studios",
       position: "Full-Stack Intern",
       responsibilities: [
-        // "Designed and implemented a website (Rails), providing teachers with an easy way to exchange educational resources."
+        // "Designed and implemented a website (Rails), providing teachers with an easy way to exchange educational resources.",
       ],
-      technologies: [
-        // "HTML",
-        // "CSS",
-        // "JavaScript",
-        // "Ruby",
-        // "Ruby on Rails",
-      ],
+      // technologies: [
+      //   // "HTML",
+      //   // "CSS",
+      //   "JavaScript",
+      //   "Ruby",
+      //   "Ruby on Rails",
+      // ],
       startDate: "June 2013",
-      endDate: "June 2014"
+      endDate: "June 2014",
     },
     {
       company: "Rackspace Hosting",
       position: "Full-Stack Intern",
       responsibilities: [
-        // "Developed a Ruby application streamlining the application process for intern candidates and intern-seeking employees."
+        // "Developed a Ruby application streamlining the application process for intern candidates and intern-seeking employees.",
       ],
-      technologies: [
-        // "HTML",
-        // "CSS",
-        // "JavaScript",
-        // "Ruby",
-        // "Sinatra",
-      ],
+      // technologies: [
+      //   // "HTML",
+      //   // "CSS",
+      //   "JavaScript",
+      //   "Ruby",
+      //   "Sinatra",
+      // ],
       startDate: "June 2013",
-      endDate: "August 2013"
-    }
+      endDate: "August 2013",
+    },
   ];
 
   const projects = [
@@ -175,13 +194,13 @@ document.querySelector("#printButton").onclick = () => {
       title: "MoFi",
       description:
         "Hackathon project that helps groups decide on a movie to watch Tinder-style. I was in charge of the Back-End.",
-      technologies: ["Koa", "Mongoose", "MongoDB", "React"]
+      technologies: ["Koa", "Mongoose", "MongoDB", "React"],
     },
     {
       title: "NinjaPup OS",
       description:
         "Basic Operating System written with Rust nightly with paged x86 64-bit memory management.",
-      technologies: ["Rust", "Kernel Development"]
+      technologies: ["Rust", "Kernel Development"],
     },
     {
       title: "todolist.social",
@@ -194,9 +213,9 @@ document.querySelector("#printButton").onclick = () => {
         "AngularJS",
         "Node.js",
         "ExpressJS",
-        "SQLite"
+        "SQLite",
       ],
-      hiddenPrint: true
+      hiddenPrint: true,
     },
     {
       title: "PintOS",
@@ -207,10 +226,10 @@ document.querySelector("#printButton").onclick = () => {
         "Kernel Development",
         "File Systems",
         "Process Scheduling",
-        "Concurrency"
+        "Concurrency",
       ],
-      hiddenPrint: true
-    }
+      hiddenPrint: true,
+    },
   ];
 
   const skillsets = [
@@ -224,11 +243,11 @@ document.querySelector("#printButton").onclick = () => {
         "Python",
         "Java",
         "C#",
-        "PHP",
+        // "PHP",
         "C",
         "C++",
-        "Rust"
-      ]
+        "Rust",
+      ],
     },
     {
       short: "Front-End",
@@ -238,13 +257,14 @@ document.querySelector("#printButton").onclick = () => {
         "Redux",
         "TypeScript",
         "JavaScript",
-        "AngularJS",
-        "Angular 2+",
+        "Apollo",
+        "GraphQL",
+        "Angular",
         "HTML",
         "CSS / Sass",
         "RxJS (Exposure)",
         "jQuery",
-      ]
+      ],
     },
     {
       short: "Back-End",
@@ -258,8 +278,8 @@ document.querySelector("#printButton").onclick = () => {
         "REST-ful APIs",
         "GraphQL",
         "Docker",
-        "Concurrency"
-      ]
+        "Concurrency",
+      ],
     },
     {
       short: "Low-Level",
@@ -271,44 +291,44 @@ document.querySelector("#printButton").onclick = () => {
         "Kernel Development",
         "File Systems",
         "System Calls",
-        "Concurrency"
+        "Concurrency",
       ],
-      hiddenPrint: true
-    }
+      hiddenPrint: true,
+    },
   ];
 
   angular
     .module("ResumeApp", ["ngMaterial", "ngSanitize"])
-    .controller("ExperienceCtrl", function($scope) {
+    .controller("ExperienceCtrl", function ($scope) {
       $scope.jobs = jobs;
       $scope.previousJobs = previousJobs;
     })
-    .controller("ProjectsCtrl", function($scope) {
+    .controller("ProjectsCtrl", function ($scope) {
       $scope.projects = projects;
     })
-    .controller("SkillsCtrl", function($scope) {
+    .controller("SkillsCtrl", function ($scope) {
       $scope.skillsets = skillsets;
     })
-    .controller("ReferencesCtrl", function($scope) {
+    .controller("ReferencesCtrl", function ($scope) {
       $scope.jobs = jobs;
     })
-    .directive("resumeSection", function() {
+    .directive("resumeSection", function () {
       return {
         restrict: "E",
         templateUrl: "components/resume-section.html",
         scope: {
-          title: "@sectionTitle"
+          title: "@sectionTitle",
         },
-        transclude: true
+        transclude: true,
       };
     })
-    .directive("resumeChips", function() {
+    .directive("resumeChips", function () {
       return {
         restrict: "E",
         templateUrl: "components/resume-chips.html",
         scope: {
-          source: "="
-        }
+          source: "=",
+        },
       };
     });
 })();
