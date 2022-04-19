@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow: auto;
 }
 
@@ -26,7 +27,6 @@ resume-section md-list md-list-item md-list-item-text {
   width: 100%;
 }
 
-
 resume-section md-list md-list-item .resume-item-title {
   font-size: 1.25rem;
   font-weight: 500;
@@ -37,13 +37,22 @@ resume-section md-list md-list-item .resume-item-main {
   text-align: justify;
 }
 
-resume-section md-list md-list-item .resume-item-main .resume-item-main-content {
+.resume-job-item {
+  padding-inline-start: 16px;
+}
+
+resume-section
+  md-list
+  md-list-item
+  .resume-item-main
+  .resume-item-main-content {
   margin-bottom: 8px;
   line-height: 1.4;
 }
 
-md-list-item:before, md-list-item {
-  min-height: 0 !important; 
+md-list-item:before,
+md-list-item {
+  min-height: 0 !important;
 }
 
 resume-chips {
@@ -54,7 +63,8 @@ resume-chips ul {
   margin-bottom: 0px;
 }
 
-resume-section md-card-title, #skills-top md-card-title {
+resume-section md-card-title,
+#skills-top md-card-title {
   padding-top: 12px;
   padding-bottom: 4px;
 }
@@ -104,6 +114,6 @@ footer {
 
 .resume-technology-chip {
   background-color: #fcf8e3;
-  padding: .1em;
+  padding: 0.1em;
   margin-right: 2px;
 }

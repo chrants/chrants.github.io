@@ -30,11 +30,8 @@
           <a href="/pdfs/Christian_Tschoepe_Resume.pdf" target="_blank" class="hidden-print" title="PDF"><md-icon md-svg-src="/img/ic_picture_as_pdf_24px.svg"> pdf </md-icon></a>
         </h1>
         <div id="headline" class="row">
-          <div id="intro" class="lead col text-justify hidden-print">
-            <strong>Software Developer</strong> pursuing full-time positions in <strong>Full-Stack</strong> and Systems
-            Development.<br> 
-            I hunger to deliver impact to your next million users. <br> 
-            In return, I offer 3½ years of working expertise in Full-Stack Web Development.
+          <div id="intro" class="lead col text-justify">
+            Mid-senior <strong>Software Engineer</strong> pursuing high-scale <strong>Front-End / Full-Stack</strong> positions.<br>
           </div>
           <address class="lead col col-12 col-lg-auto">
             <a href="mailto:tschoepe.christian@gmail.com">tschoepe.christian@gmail.com</a> <br>
@@ -79,7 +76,7 @@
                   <h5 class="col col-sm-auto hidden-sm-down resume-item-title">{{job.startDate}} - {{job.endDate}}</h5>
                 </span>
                 <p ng-if="job.description" class="lead mb-0">{{job.description}}</p>
-                <ul class="list-unstyled resume-item-main">
+                <ul class="resume-item-main resume-job-item">
                   <li class="resume-item-main-content" ng-repeat="responsibility in job.responsibilities">
                     <span ng-bind-html="responsibility"></span>
                   </li>
@@ -140,6 +137,7 @@
         </resume-section>
 
         <div class="page-break"></div>
+        <br />
 
 
         <resume-section section-title="Previous Experience">

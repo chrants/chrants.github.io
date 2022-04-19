@@ -10,7 +10,7 @@ document.querySelector("#printButton").onclick = () => {
       responsibilities: [
         "Planned and executed a major refactor on the product catalog across the site. I communicated closely with design and product teams to scope this major refactor into the roadmap, which opened the door to an all-new design system previously considered technically impossible.",
         "Worked closely with data team to lay the groundworks, scope, and launch a major customer data platform migration from an old provider. I received praise from both the data lead and fellow front-end for how smoothly this major migration launched.",
-        "Planned (Almost) Pixel Perfect UI OKRs. Responsible for interfacing front-end team on large-scale design system projects.",
+        "Planned (Almost) Pixel Perfect UI OKRs. Responsible for interfacing frontend team on large-scale design system projects.",
         "Scoped and launched coupons catalog.",
       ],
       technologies: [
@@ -53,7 +53,7 @@ document.querySelector("#printButton").onclick = () => {
       position: "Full-Stack Developer",
       responsibilities: [
         "Developed the text engine for the company's web-based video editor and renderer, which has produced millions of video ads for Fortune 500 customers.",
-        "Implemented the video and image management system (Rails, TypeScript) integrated across the company's core offerings, enhancing customers' experience in creating ad campaigns (100% of company revenue).",
+        "Implemented the video and image management system (Rails, TypeScript) integrated across the company's core offerings, enhancing customers' experience in creating ad campaigns -- touching 100% of company revenue.",
         "Owned the company UI component library (React, TypeScript) in close collaboration with product designers.",
         // "Interviewed engineering candidates on a survey of front-end, back-end and general technical software skills."
       ],
@@ -81,8 +81,8 @@ document.querySelector("#printButton").onclick = () => {
       company: "Gofore",
       position: "Software Developer",
       responsibilities: [
-        "Founded and led a project to automate cloud billing processes, improving reliability and costs €1000s monthly.",
-        "Used natural language chat bot solutions on project sales data to help consultants find relevant projects of their interests.",
+        "Automated customer cloud billing processes, improving reliability and costs €1000s monthly.",
+        "Used natural language chat bot solutions on project sales data to help consultants find relevant projects.",
       ],
       technologies: [
         "Python",

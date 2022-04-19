@@ -131,12 +131,13 @@ resume-section {
 }
 
 footer {
-  position: fixed !important;
+  margin-top: 24px;
+  /* position: fixed !important;
   left: 0;
   right: 0;
   bottom: 0 !important;
   font-weight: lighter;
-  margin-bottom: 0;
+  margin-bottom: 0; */
 }
 
 .page-break {
